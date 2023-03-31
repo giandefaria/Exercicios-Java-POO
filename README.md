@@ -1,4 +1,5 @@
 # Exercicios-Java Programação Orientada a Objetos do projeto Start da Capgemini
+Netbeans + JDK 19
 
 Lista de exercícios POO
 1. Crie uma classe para representar uma Pessoa com os atributos privados de nome, data de nascimento e
