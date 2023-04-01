@@ -10,4 +10,8 @@ package Exercicio01JavaPOO;
  */
 public class Pessoa {
     
+    //atributos
+    private String nome;
+    private float altura;
+    
 }
