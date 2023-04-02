@@ -13,12 +13,11 @@ public class ContaCorrente {
     //atributos
     private int numeroConta;
     private String nomeCorrentista;
-    private double saldo;
+    private double saldo = 0;
     
-    public ContaCorrente (int numeroConta, String nomeCorrentista, double saldo) {
+    public ContaCorrente (int numeroConta, String nomeCorrentista) {
         this.numeroConta = numeroConta;
         this.nomeCorrentista = nomeCorrentista;
-        this.saldo = saldo;
     
     }
     
