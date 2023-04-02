@@ -13,10 +13,37 @@ Crie uma classe que contenha um método main para testar sua classe BombaCombust
  */
 package Exercicio03JavaPOO;
 
+import java.util.Scanner;
+
 public class App {
 
-
     public static void main(String[] args) {
+        
+        char tipoCombustivel;
+        double valorLitro;
+        double quantidadeNaBomba;
+        int opcao;
+        
+        char desejaContinuar = 'S';
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 'S' || desejaContinuar == 's') {
+            
+            System.out.println("Digite a opcao desejada: 1 - Abastecer por valor, "
+                    + "\n 2 - abastecer por quantidade de litros, \n "
+                    + "3 - alterar valor do litro do combustivel, \n "
+                    + "4 - alterar tipo de combustivel, \n "
+                    + "5 - alterar quantidade registrada de combustivel disponivel na bomba");
+            opcao = leitor.nextInt();
+            
+            
+            
+        
+            System.out.println("Deseja continuar? S - Sim, N - Nao");
+            desejaContinuar = leitor.next().charAt(0);
+        }
+        
       
     }
 }
