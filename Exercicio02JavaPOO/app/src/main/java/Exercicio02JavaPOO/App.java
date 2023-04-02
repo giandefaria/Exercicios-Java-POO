@@ -19,10 +19,20 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        while (desejaContinuar == 's' || desejaContinuar == 'S') {
+            
+            System.out.println("Informe o numero da conta: ");
+            numeroConta = leitor.nextInt();
+            
+            System.out.println("Informe o nome do correntista: ");
+            nomeCorrentista = leitor.nextLine();
+            
+            
+            ContaCorrente contaCorrente = new ContaCorrente(numeroConta, nomeCorrentista);
+            System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
+            System.out.println("Nome do conrrentista: " + contaCorrente.getNomeCorrentista());
+            System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
         
-        ContaCorrente contaCorrente = new ContaCorrente(2050, "Gian");
-        System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
-        System.out.println("Nome do conrrentista: " + contaCorrente.getNomeCorrentista());
-        System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
+        }
     }
 }
