@@ -22,4 +22,35 @@ public class ContaCorrente {
     
     }
     
+    public void alterarNome(String nome) {
+        this.nomeCorrentista = nome;
+    }
+    
+    //metodos de acesso
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta(int numeroConta) {
+        this.numeroConta = numeroConta;
+    }
+
+    public String getNomeCorrentista() {
+        return nomeCorrentista;
+    }
+
+    public void setNomeCorrentista(String nomeCorrentista) {
+        this.nomeCorrentista = nomeCorrentista;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
+    
+    
 }
