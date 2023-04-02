@@ -5,12 +5,16 @@ todos dados de uma pessoa. Crie um método para calcular a idade da pessoa.
  */
 package Exercicio01JavaPOO;
 
+import java.text.ParseException;
+
 public class App {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         
+        //objeto pes do tipo pessoa
         Pessoa pes = new Pessoa("Gian", "27/11/1994", 1.70f);
+        pes.imprimirDados();
         
     }
 }
