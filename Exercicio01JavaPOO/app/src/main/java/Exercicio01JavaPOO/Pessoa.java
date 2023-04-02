@@ -4,6 +4,8 @@
  */
 package Exercicio01JavaPOO;
 
+import java.util.Date;
+
 /**
  *
  * @author User
@@ -12,6 +14,7 @@ public class Pessoa {
     
     //atributos
     private String nome;
+    private Date dataNascimento;
     private float altura;
     
 }
