@@ -37,7 +37,12 @@ public class App {
             if (opcao == 1) {
                 System.out.println("Digite o valor que deseja depositar: ");
                 double deposito = leitor.nextDouble();
-                contaCorrente.setSaldo(deposito);
+                contaCorrente.deposito(deposito);
+                System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
+            } else if (opcao == 2) {
+                System.out.println("Digite o valor que deseja sacar: ");
+                double saque = leitor.nextDouble();
+                contaCorrente.valorSaque(saque);
                 System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
             }
             
