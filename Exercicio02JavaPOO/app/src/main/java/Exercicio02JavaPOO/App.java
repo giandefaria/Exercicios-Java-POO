@@ -10,5 +10,8 @@ public class App {
     public static void main(String[] args) {
         
         ContaCorrente contaCorrente = new ContaCorrente(2050, "Gian", 5200.00);
+        System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
+        System.out.println("Nome do conrrentista: " + contaCorrente.getNomeCorrentista());
+        System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
     }
 }
