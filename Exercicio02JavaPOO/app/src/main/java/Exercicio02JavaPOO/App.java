@@ -9,5 +9,6 @@ public class App {
 
     public static void main(String[] args) {
         
+        ContaCorrente contaCorrente = new ContaCorrente(2050, "Gian", 5200.00);
     }
 }
