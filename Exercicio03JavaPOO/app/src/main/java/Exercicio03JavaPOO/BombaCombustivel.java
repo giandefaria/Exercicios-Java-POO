@@ -63,4 +63,32 @@ public class BombaCombustivel {
     public void alterarQuantidadeCombustivel (double novaQuantidadeCombustivelNaBomba) {
         this.quantidadeCombustivelNaBomba = novaQuantidadeCombustivelNaBomba;
     }
+    
+    //getters and setters
+
+    public char getTipoCombustivel() {
+        return tipoCombustivel;
+    }
+
+    public void setTipoCombustivel(char tipoCombustivel) {
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
+    public double getValorPorLitro() {
+        return valorPorLitro;
+    }
+
+    public void setValorPorLitro(double valorPorLitro) {
+        this.valorPorLitro = valorPorLitro;
+    }
+
+    public double getQuantidadeCombustivelNaBomba() {
+        return quantidadeCombustivelNaBomba;
+    }
+
+    public void setQuantidadeCombustivelNaBomba(double quantidadeCombustivelNaBomba) {
+        this.quantidadeCombustivelNaBomba = quantidadeCombustivelNaBomba;
+    }
+    
+    
 }
