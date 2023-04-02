@@ -5,9 +5,20 @@ saque; No construtor, saldo é opcional, com valor default zero e os demais atri
  */
 package Exercicio02JavaPOO;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        int numeroConta;
+        String nomeCorrentista;
+        double saldo;
+        
+        char desejaContinuar = 's';
+        
+        Scanner leitor = new Scanner(System.in);
+        
         
         ContaCorrente contaCorrente = new ContaCorrente(2050, "Gian");
         System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
