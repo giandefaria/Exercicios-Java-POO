@@ -17,5 +17,12 @@ public class BombaCombustivel {
     //calcula quantidade de combustivel pelo valor a ser abastecido
     public void abastecerPorValor(double valorParaAbastecer) {
         this.quantidadeCombustivel = valorParaAbastecer / this.valorPorLitro;
+        System.out.println("Veículo abastecido com " + this.quantidadeCombustivel + " litros");
+    }
+    
+    public void abastecerPorLitro (double quantidadeCombustivel)  {
+        double valorASerPago = quantidadeCombustivel * this.valorPorLitro;
+        System.out.println("Valor total a ser pago equivalente a "
+                + quantidadeCombustivel + " litros de gasolina: R$ " + valorASerPago);
     }
 }
