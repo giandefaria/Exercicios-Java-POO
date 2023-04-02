@@ -36,23 +36,25 @@ public class App {
             System.out.println("Deseja realizar alguma movimentação? 1 - Depositar, 2 - Saque, 3 - Alterar nome, 4 - Sair");
             opcao = leitor.nextInt();
 
-            if (opcao == 1) {
-                System.out.println("Digite o valor que deseja depositar: ");
-                double deposito = leitor.nextDouble();
-                contaCorrente.deposito(deposito);
-                System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
-            } else if (opcao == 2) {
-                System.out.println("Digite o valor que deseja sacar: ");
-                double saque = leitor.nextDouble();
-                contaCorrente.valorSaque(saque);
-                System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
-            } else if (opcao == 3) {
-
-                System.out.println("Digite o novo nome: ");
-                String novoNome = leitor.nextLine();
-                contaCorrente.alterarNome(novoNome);
-            } else {
-                novaMovimentacao = 'n';
+            switch (opcao) {
+                case 1 -> {
+                    System.out.println("Digite o valor que deseja depositar: ");
+                    double deposito = leitor.nextDouble();
+                    contaCorrente.deposito(deposito);
+                    System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
+                }
+                case 2 -> {
+                    System.out.println("Digite o valor que deseja sacar: ");
+                    double saque = leitor.nextDouble();
+                    contaCorrente.valorSaque(saque);
+                    System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
+                }
+                case 3 -> {
+                    System.out.println("Digite o novo nome: ");
+                    String novoNome = leitor.nextLine();
+                    contaCorrente.alterarNome(novoNome);
+                }
+                default -> novaMovimentacao = 'n';
             }
         }
 
