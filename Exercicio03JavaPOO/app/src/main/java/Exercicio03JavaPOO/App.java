@@ -32,17 +32,20 @@ public class App {
         
         while (desejaContinuar == 'S' || desejaContinuar == 's') {
             
-            System.out.println("Digite a opcao desejada: 1 - Abastecer por valor, "
-                    + "\n 2 - abastecer por quantidade de litros, \n "
-                    + "3 - alterar valor do litro do combustivel, \n "
-                    + "4 - alterar tipo de combustivel, \n "
-                    + "5 - alterar quantidade registrada de combustivel disponivel na bomba");
+            System.out.println("""
+                               Digite a opcao desejada: 
+                               1 - Abastecer por valor, 
+                               2 - abastecer por quantidade de litros, 
+                               3 - alterar valor do litro do combustivel, 
+                               4 - alterar tipo de combustivel, 
+                               5 - alterar quantidade registrada de combustivel disponivel na bomba""");
             opcao = leitor.nextInt();
             
             switch(opcao){
                 case 1 ->{
-                    System.out.println("Digite o valor que deseja abaster");
+                    System.out.println("Digite o valor que deseja abaster em R$");
                     double valor = leitor.nextDouble();
+                    bombaCombustivel.abastecerPorValor(valor);
                 }
             }
             
