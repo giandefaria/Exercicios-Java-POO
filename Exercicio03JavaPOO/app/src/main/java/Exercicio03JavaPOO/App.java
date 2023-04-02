@@ -28,6 +28,8 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        BombaCombustivel bombaCombustivel = new BombaCombustivel('G', 5.23, 1000);
+        
         while (desejaContinuar == 'S' || desejaContinuar == 's') {
             
             System.out.println("Digite a opcao desejada: 1 - Abastecer por valor, "
