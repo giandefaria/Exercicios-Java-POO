@@ -46,14 +46,10 @@ public class App {
                     bombaCombustivel.abastecerPorValor();
                 }
                 case 2 -> {
-                    System.out.println("Digite a quantidade de lietros que deseja abastecer");
-                    double quantidade = leitor.nextDouble();
                     bombaCombustivel.abastecerPorLitro();
                 }
                 case 3 -> {
-                    System.out.println("Digite o novo valor do litro de combustivel");
-                    double novoValorLitro = leitor.nextDouble();
-                    bombaCombustivel.alterarValor(novoValorLitro);
+                    bombaCombustivel.alterarValor();
                 }
                 case 4 -> {
                     bombaCombustivel.alterarCombustivel();

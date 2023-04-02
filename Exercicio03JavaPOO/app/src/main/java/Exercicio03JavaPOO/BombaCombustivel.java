@@ -34,7 +34,7 @@ public class BombaCombustivel {
     }
     
     public void abastecerPorLitro ()  {
-        System.out.println("Digite a quantidade de lietros que deseja abastecer");
+        System.out.println("Digite a quantidade de litros que deseja abastecer");
         double quantidade = leitor.nextDouble();
         double valorASerPago = quantidade * this.valorPorLitro;
         this.quantidadeCombustivelNaBomba = this.quantidadeCombustivelNaBomba - quantidade;
@@ -42,9 +42,11 @@ public class BombaCombustivel {
                 + quantidade + " litros de combustivel: R$ " + valorASerPago);
     }
     
-    public void alterarValor(double novoValor) {
-        this.valorPorLitro = novoValor;
-        System.out.println("Novo valor por litro de combustivel: R$ " + novoValor);
+    public void alterarValor() {
+        System.out.println("Digite o novo valor do litro de combustivel");
+        double novoValorLitro = leitor.nextDouble();
+        this.valorPorLitro = novoValorLitro;
+        System.out.println("Novo valor por litro de combustivel: R$ " + novoValorLitro);
     }
     
     public void alterarCombustivel() {
