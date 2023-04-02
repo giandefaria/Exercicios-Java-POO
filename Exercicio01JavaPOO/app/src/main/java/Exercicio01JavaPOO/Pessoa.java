@@ -35,8 +35,8 @@ public class Pessoa {
     
     public void idade(){
         
-        Duration dur = Duration.between(dataNascimento.toInstant(), Instant.now());
-        System.out.println(dur.toDays() / 365);
+        Duration dur = Duration.between(dataNascimento.toInstant(), Instant.now()); //obtenho a diferença entre a data atual e a data de nascimento
+        System.out.println(dur.toDays() / 365); //diferença em dias eu divido por 365 para saber os anos
     }
     
     //getters and setters
