@@ -4,6 +4,8 @@
  */
 package Exercicio01JavaPOO;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -17,9 +19,9 @@ public class Pessoa {
     private Date dataNascimento;
     private float altura;
     
-    public Pessoa (String nome, Date dataNascimento, float altura) {
+    public Pessoa (String nome, String dataNascimento, float altura) throws ParseException {
         this.nome = nome;
-        this.dataNascimento = dataNascimento;
+        this.setDataNascimento(dataNascimento);
         this.altura = altura;
     }
 
@@ -35,8 +37,8 @@ public class Pessoa {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setDataNascimento(String dataNascimento) throws ParseException {
+        this.dataNascimento = new SimpleDateFormat("dd/mm/yyyy").parse(dataNascimento);
     }
 
     public float getAltura() {
