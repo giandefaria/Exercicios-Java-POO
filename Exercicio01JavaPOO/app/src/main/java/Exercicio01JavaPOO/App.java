@@ -19,10 +19,23 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
-        //objeto pessoa do tipo pessoa
-        Pessoa pessoa = new Pessoa("Gian", "27/11/1994", 1.71f);
-        pessoa.imprimirDados();
-        pessoa.idade();
+        while (desejaContinuar == 's' || desejaContinuar == 'S') {
+            
+            System.out.println("Digite o nome: ");
+            nome = leitor.nextLine();
+            
+            System.out.println("Digite a data de nascimento no formato 'dd/mm/yyyy': ");
+            dataNascimento = leitor.nextLine();
+            
+            System.out.println("Digite a altura: ");
+            altura = leitor.nextFloat();
+        
+            //objeto pessoa do tipo pessoa
+            Pessoa pessoa = new Pessoa("Gian", "27/11/1994", 1.71f);
+            pessoa.imprimirDados();
+            pessoa.idade();
+        
+        }
         
     }
 }
