@@ -6,6 +6,8 @@ package Exercicio01JavaPOO;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Date;
 
 /**
@@ -29,6 +31,12 @@ public class Pessoa {
         System.out.println("Nome: " + this.nome);
         System.out.println("Data de Nascimento: " + dataNascimento);
         System.out.println("Altura: " + altura);    
+    }
+    
+    public void idade(){
+        
+        Duration dur = Duration.between(dataNascimento.toInstant(), Instant.now());
+        System.out.println(dur.toDays() / 365);
     }
     
     //getters and setters

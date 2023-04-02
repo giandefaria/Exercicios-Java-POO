@@ -15,6 +15,7 @@ public class App {
         //objeto pes do tipo pessoa
         Pessoa pes = new Pessoa("Gian", "27/11/1994", 1.70f);
         pes.imprimirDados();
+        pes.idade();
         
     }
 }
