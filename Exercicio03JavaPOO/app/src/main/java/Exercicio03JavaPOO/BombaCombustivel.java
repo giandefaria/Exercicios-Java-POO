@@ -23,11 +23,11 @@ public class BombaCombustivel {
     public void abastecerPorLitro (double quantidadeCombustivel)  {
         double valorASerPago = quantidadeCombustivel * this.valorPorLitro;
         System.out.println("Valor total a ser pago equivalente a "
-                + quantidadeCombustivel + " litros de gasolina: R$ " + valorASerPago);
+                + quantidadeCombustivel + " litros de combustivel: R$ " + valorASerPago);
     }
     
     public void alterarValor(double novoValor) {
         this.valorPorLitro = novoValor;
-        System.out.println("Novo valor por litro de gasolina: R$ " + novoValor);
+        System.out.println("Novo valor por litro de combustivel: R$ " + novoValor);
     }
 }
