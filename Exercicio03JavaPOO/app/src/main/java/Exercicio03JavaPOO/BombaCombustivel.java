@@ -25,4 +25,9 @@ public class BombaCombustivel {
         System.out.println("Valor total a ser pago equivalente a "
                 + quantidadeCombustivel + " litros de gasolina: R$ " + valorASerPago);
     }
+    
+    public void alterarValor(double novoValor) {
+        this.valorPorLitro = novoValor;
+        System.out.println("Novo valor por litro de gasolina: R$ " + novoValor);
+    }
 }
