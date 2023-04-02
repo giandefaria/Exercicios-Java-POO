@@ -63,7 +63,5 @@ public class Pessoa {
     public void setAltura(float altura) {
         this.altura = altura;
     }
-    
-    
-    
+           
 }
