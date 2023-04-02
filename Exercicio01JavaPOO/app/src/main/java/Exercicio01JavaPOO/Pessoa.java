@@ -17,4 +17,10 @@ public class Pessoa {
     private Date dataNascimento;
     private float altura;
     
+    public Pessoa (String nome, Date dataNascimento, float altura) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.altura = altura;
+    }
+    
 }
