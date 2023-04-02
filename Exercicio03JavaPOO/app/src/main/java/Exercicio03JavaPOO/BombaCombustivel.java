@@ -10,4 +10,9 @@ package Exercicio03JavaPOO;
  */
 public class BombaCombustivel {
     
+    private char tipoCombustivel;
+    private double valorPorLitro;
+    private double quantidadeCombustivel;
+    
+    
 }
