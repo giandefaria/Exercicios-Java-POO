@@ -24,7 +24,14 @@ public class Pessoa {
         this.setDataNascimento(dataNascimento);
         this.altura = altura;
     }
-
+    
+    public void imprimirDados () {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Data de Nascimento: " + dataNascimento);
+        System.out.println("Altura: " + altura);    
+    }
+    
+    //getters and setters
     public String getNome() {
         return nome;
     }
