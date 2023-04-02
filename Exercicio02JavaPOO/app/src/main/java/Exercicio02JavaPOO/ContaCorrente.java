@@ -30,8 +30,12 @@ public class ContaCorrente {
     }
     
     public void valorSaque(double saque) {
-        this.saldo = this.saldo - saque;
-        System.out.println("Você sacou o valor de R$ " + saque);
+        if (saque <= this.saldo) {
+            this.saldo = this.saldo - saque;
+            System.out.println("Você sacou o valor de R$ " + saque);
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
     }
     
     //metodos de acesso
