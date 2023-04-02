@@ -25,17 +25,21 @@ public class BombaCombustivel {
     }
     
     //calcula quantidade de combustivel pelo valor a ser abastecido
-    public void abastecerPorValor(double valorParaAbastecer) {
-        double quantidadeDeCombustivel = valorParaAbastecer / this.valorPorLitro;
+    public void abastecerPorValor() {
+        System.out.println("Digite o valor que deseja abaster em R$");
+        double valor = leitor.nextDouble();
+        double quantidadeDeCombustivel = valor / this.valorPorLitro;
         this.quantidadeCombustivelNaBomba = this.quantidadeCombustivelNaBomba - quantidadeDeCombustivel;
         System.out.println("Veículo abastecido com " + quantidadeDeCombustivel + " litros");
     }
     
-    public void abastecerPorLitro (double quantidadeCombustivel)  {
-        double valorASerPago = quantidadeCombustivel * this.valorPorLitro;
-        this.quantidadeCombustivelNaBomba = this.quantidadeCombustivelNaBomba - quantidadeCombustivel;
+    public void abastecerPorLitro ()  {
+        System.out.println("Digite a quantidade de lietros que deseja abastecer");
+        double quantidade = leitor.nextDouble();
+        double valorASerPago = quantidade * this.valorPorLitro;
+        this.quantidadeCombustivelNaBomba = this.quantidadeCombustivelNaBomba - quantidade;
         System.out.println("Valor total a ser pago equivalente a "
-                + quantidadeCombustivel + " litros de combustivel: R$ " + valorASerPago);
+                + quantidade + " litros de combustivel: R$ " + valorASerPago);
     }
     
     public void alterarValor(double novoValor) {
