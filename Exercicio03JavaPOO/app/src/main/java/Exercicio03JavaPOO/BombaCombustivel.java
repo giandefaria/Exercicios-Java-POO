@@ -14,5 +14,8 @@ public class BombaCombustivel {
     private double valorPorLitro;
     private double quantidadeCombustivel;
     
-    
+    //calcula quantidade de combustivel pelo valor a ser abastecido
+    public void abastecerPorValor(double valorParaAbastecer) {
+        this.quantidadeCombustivel = valorParaAbastecer / this.valorPorLitro;
+    }
 }
