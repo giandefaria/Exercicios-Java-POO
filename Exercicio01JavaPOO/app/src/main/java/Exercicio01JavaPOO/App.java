@@ -12,10 +12,10 @@ public class App {
 
     public static void main(String[] args) throws ParseException {
         
-        //objeto pes do tipo pessoa
-        Pessoa pes = new Pessoa("Gian", "27/11/1994", 1.70f);
-        pes.imprimirDados();
-        pes.idade();
+        //objeto pessoa do tipo pessoa
+        Pessoa pessoa = new Pessoa("Gian", "27/11/1994", 1.71f);
+        pessoa.imprimirDados();
+        pessoa.idade();
         
     }
 }
