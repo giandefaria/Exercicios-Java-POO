@@ -23,10 +23,10 @@ public class App {
             
             System.out.println("Informe o numero da conta: ");
             numeroConta = leitor.nextInt();
-            
+            leitor.nextLine();
+   
             System.out.println("Informe o nome do correntista: ");
             nomeCorrentista = leitor.nextLine();
-            
             
             ContaCorrente contaCorrente = new ContaCorrente(numeroConta, nomeCorrentista);
             System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
