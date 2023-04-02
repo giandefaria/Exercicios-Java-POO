@@ -14,6 +14,7 @@ public class App {
         int numeroConta;
         String nomeCorrentista;
         double saldo;
+        int opcao;
         
         char desejaContinuar = 's';
         
@@ -29,6 +30,17 @@ public class App {
             nomeCorrentista = leitor.nextLine();
             
             ContaCorrente contaCorrente = new ContaCorrente(numeroConta, nomeCorrentista);
+            
+            System.out.println("Deseja realizar alguma movimentação? 1 - Depositar, 2 - Saque, 3 - Alterar nome");
+            opcao = leitor.nextInt();
+            
+            if (opcao == 1) {
+                System.out.println("Digite o valor que deseja depositar: ");
+                double deposito = leitor.nextDouble();
+                contaCorrente.setSaldo(deposito);
+                System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
+            }
+            
             System.out.println("Numero da conta: " + contaCorrente.getNumeroConta());
             System.out.println("Nome do conrrentista: " + contaCorrente.getNomeCorrentista());
             System.out.println("Saldo da conta: R$ " + contaCorrente.getSaldo());
