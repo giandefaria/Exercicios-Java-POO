@@ -26,6 +26,15 @@ public class ContaCorrente {
         this.nomeCorrentista = nome;
     }
     
+    public void deposito(double deposito) {
+        this.saldo = this.saldo + deposito;
+    }
+    
+    public void valorSaque(double saque) {
+        this.saldo = this.saldo - saque;
+        System.out.println("Você sacou o valor de R$ " + saque);
+    }
+    
     //metodos de acesso
     public int getNumeroConta() {
         return numeroConta;
