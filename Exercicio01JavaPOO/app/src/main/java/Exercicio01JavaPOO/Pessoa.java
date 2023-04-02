@@ -45,7 +45,7 @@ public class Pessoa {
     }
 
     public void setDataNascimento(String dataNascimento) throws ParseException {
-        this.dataNascimento = new SimpleDateFormat("dd/mm/yyyy").parse(dataNascimento);
+        this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy").parse(dataNascimento);
     }
 
     public float getAltura() {
