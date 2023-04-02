@@ -23,7 +23,7 @@ public class App {
             
             System.out.println("Informe o numero da conta: ");
             numeroConta = leitor.nextInt();
-            leitor.nextLine();
+            leitor.nextLine(); //evitar bug de pular o próximo comando
    
             System.out.println("Informe o nome do correntista: ");
             nomeCorrentista = leitor.nextLine();

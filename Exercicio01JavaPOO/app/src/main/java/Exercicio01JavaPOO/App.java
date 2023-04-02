@@ -37,6 +37,7 @@ public class App {
 
             System.out.println("Deseja continar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
+            leitor.nextLine();
         }
 
     }
