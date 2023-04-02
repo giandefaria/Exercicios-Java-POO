@@ -12,6 +12,11 @@ public class App {
 
     public static void main(String[] args) throws ParseException {
         
+        String nome;
+        String dataNascimento;
+        float altura;
+        char desejaContinuar = 's';
+        
         Scanner leitor = new Scanner(System.in);
         
         //objeto pessoa do tipo pessoa
