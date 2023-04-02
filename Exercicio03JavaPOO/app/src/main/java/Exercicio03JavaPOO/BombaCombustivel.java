@@ -17,6 +17,13 @@ public class BombaCombustivel {
     
     Scanner leitor = new Scanner(System.in);
     
+    //construtor
+    public BombaCombustivel (char tipoCombustivel, double valorPorLitro, double quantidadeCombustivelNaBomba) {
+        this.tipoCombustivel = tipoCombustivel;
+        this.valorPorLitro = valorPorLitro;
+        this.quantidadeCombustivelNaBomba = quantidadeCombustivelNaBomba;    
+    }
+    
     //calcula quantidade de combustivel pelo valor a ser abastecido
     public void abastecerPorValor(double valorParaAbastecer) {
         double quantidadeDeCombustivel = valorParaAbastecer / this.valorPorLitro;
