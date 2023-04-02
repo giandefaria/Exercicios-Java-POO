@@ -11,31 +11,33 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) throws ParseException {
-        
+
         String nome;
         String dataNascimento;
         float altura;
         char desejaContinuar = 's';
-        
+
         Scanner leitor = new Scanner(System.in);
-        
+
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
-            
+
             System.out.println("Digite o nome: ");
             nome = leitor.nextLine();
-            
+
             System.out.println("Digite a data de nascimento no formato 'dd/mm/yyyy': ");
             dataNascimento = leitor.nextLine();
-            
+
             System.out.println("Digite a altura: ");
             altura = leitor.nextFloat();
-        
+
             //objeto pessoa do tipo pessoa
-            Pessoa pessoa = new Pessoa("Gian", "27/11/1994", 1.71f);
+            Pessoa pessoa = new Pessoa(nome, dataNascimento, altura);
             pessoa.imprimirDados();
             pessoa.idade();
-        
+
+            System.out.println("Deseja continar? S - Sim, N - Não");
+            desejaContinuar = leitor.next().charAt(0);
         }
-        
+
     }
 }
