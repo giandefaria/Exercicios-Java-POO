@@ -11,6 +11,8 @@ package Exercicio02JavaPOO;
 public class ContaCorrente {
     
     //atributos
-    
+    private int numerConta;
+    private String nomeCorrentista;
+    private double saldo;
     
 }
