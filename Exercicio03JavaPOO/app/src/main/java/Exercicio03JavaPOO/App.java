@@ -37,6 +37,13 @@ public class App {
                     + "5 - alterar quantidade registrada de combustivel disponivel na bomba");
             opcao = leitor.nextInt();
             
+            switch(opcao){
+                case 1 ->{
+                    System.out.println("Digite o valor que deseja abaster");
+                    double valor = leitor.nextDouble();
+                }
+            }
+            
             
             
         
