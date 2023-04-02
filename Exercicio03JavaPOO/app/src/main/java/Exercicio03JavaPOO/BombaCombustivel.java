@@ -50,4 +50,8 @@ public class BombaCombustivel {
             System.out.println("Tipo de combustível invalido");
         }
     }
+    
+    public void alterarQuantidadeCombustivel (double novaQuantidadeCombustivelNaBomba) {
+        this.quantidadeCombustivel = novaQuantidadeCombustivelNaBomba;
+    }
 }
