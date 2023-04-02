@@ -10,5 +10,7 @@ public class App {
 
     public static void main(String[] args) {
         
+        Pessoa pes = new Pessoa("Gian", "27/11/1994", 1.70f);
+        
     }
 }
