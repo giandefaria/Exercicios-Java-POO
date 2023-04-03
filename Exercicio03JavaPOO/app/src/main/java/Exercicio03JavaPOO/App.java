@@ -54,16 +54,12 @@ public class App {
                 case 4 -> {
                     bombaCombustivel.alterarCombustivel();
                 }
-                
-            }
-            
-            
-            
-        
+                default -> System.out.println("Valor invalido");   
+            }   
+            System.out.println ("Quantidade restante de combustível na bomba: " 
+                + bombaCombustivel.getQuantidadeCombustivelNaBomba());
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
-        }
-        
-      
+        }      
     }
 }
