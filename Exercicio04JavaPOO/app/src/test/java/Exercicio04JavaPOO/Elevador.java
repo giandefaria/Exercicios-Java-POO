@@ -10,6 +10,9 @@ package Exercicio04JavaPOO;
  */
 public class Elevador {
     
-    
+    private int andarAtual;
+    private int totalAndares;
+    private int capacidadeElevador;
+    private int pessoasNoElevador;
     
 }
