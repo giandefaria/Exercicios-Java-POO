@@ -4,6 +4,8 @@
  */
 package Exercicio04JavaPOO;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -16,10 +18,22 @@ public class Elevador {
     private int capacidadeElevador;
     private int pessoasNoElevador;
     
+    Scanner leitor = new Scanner(System.in);
+    
     public Elevador (int capacidadeElevador, int totalAndares){
         this.capacidadeElevador = capacidadeElevador;
         this.totalAndares = totalAndares;
     
+    }
+    
+    public void entra () {
+        int quantidadePessoasEntrando = leitor.nextInt();
+        if (quantidadePessoasEntrando < (this.capacidadeElevador - this.pessoasNoElevador)) {
+            this.pessoasNoElevador += quantidadePessoasEntrando;
+        } else {
+            System.out.println("Elevador só possui capacidade para mais " 
+                    + (this.capacidadeElevador - this.pessoasNoElevador) + " pessoas.");
+        }
     }
     
 }
