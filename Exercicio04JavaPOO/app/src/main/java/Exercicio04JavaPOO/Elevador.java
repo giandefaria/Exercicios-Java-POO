@@ -31,6 +31,7 @@ public class Elevador {
         int quantidadePessoasEntrando = leitor.nextInt();
         if (quantidadePessoasEntrando < (this.capacidadeElevador - this.pessoasNoElevador)) {
             this.pessoasNoElevador += quantidadePessoasEntrando;
+            System.out.println("Agora há " + this.pessoasNoElevador + " pessoas no elevador");
         } else {
             System.out.println("Elevador só possui capacidade para mais " 
                     + (this.capacidadeElevador - this.pessoasNoElevador) + " pessoas.");
@@ -43,7 +44,7 @@ public class Elevador {
         if (this.pessoasNoElevador > 0 && quantidadePessoasSaindo <= this.pessoasNoElevador) {
             this.pessoasNoElevador -= quantidadePessoasSaindo;
             System.out.println("Sairam " + quantidadePessoasSaindo + " pessoas "
-                    + "do elevador. Agora há " + this.pessoasNoElevador + " pessoas");       
+                    + "do elevador. Agora há " + this.pessoasNoElevador + " pessoas no elevador");       
         } else {
             System.out.println("Valor inválido. Nao há ninguém dentro do elevador "
                     + "ou a quantidade de pessoas saindo e maior que a quantidade "
@@ -53,20 +54,21 @@ public class Elevador {
     
     public void subirAndarElevador () {
         System.out.println("Informe quantos andares quer que o elevador suba");
-        int quantidadeAndaresParaElevadorSubir = leitor.nextInt();
-        if (quantidadeAndaresParaElevadorSubir  <= (this.totalAndares - this.andarAtual)) {
+        int quantidadeAndaresParaElevadorSubir = 0;
+        quantidadeAndaresParaElevadorSubir = leitor.nextInt();
+        if (quantidadeAndaresParaElevadorSubir <= (this.totalAndares - this.andarAtual)) {
             this.andarAtual += quantidadeAndaresParaElevadorSubir;
             System.out.println("Você chegou ao andar " + this.andarAtual + "!");
         } else {
-            System.out.println ("Não existe o andar " + (this.andarAtual 
-                    += quantidadeAndaresParaElevadorSubir) + ", o elevador "
-                            + "possui apenas " + this.totalAndares  + " andares!" );
+            System.out.println ("Valor inválido. O predio possui apenas " 
+                    + this.totalAndares  + " andares! Voce está no andar " + this.andarAtual);
         }
     }
     
     public void descerAndarElevador () {
         System.out.println("Informe quantos andares quer que o elevador desça");
-        int quantidadeAndaresParaElevadorDescer = leitor.nextInt();
+        int quantidadeAndaresParaElevadorDescer = 0;
+        quantidadeAndaresParaElevadorDescer = leitor.nextInt();
         if (quantidadeAndaresParaElevadorDescer <= this.andarAtual) {
             this.andarAtual -= quantidadeAndaresParaElevadorDescer;
             System.out.println("Você chegou ao andar " + this.andarAtual + "!");

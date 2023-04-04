@@ -28,7 +28,7 @@ public class App {
         System.out.println("Informe a capacidade de pessoas no elevador:");
         capacidadePessoasElevador = leitor.nextInt();
         
-        System.out.println("Informe a quantidade de andares que o predio tera");
+        System.out.println("Informe a quantidade de andares do predio");
         totalAndares = leitor.nextInt();
         
         Elevador elevador = new Elevador(capacidadePessoasElevador, totalAndares);
