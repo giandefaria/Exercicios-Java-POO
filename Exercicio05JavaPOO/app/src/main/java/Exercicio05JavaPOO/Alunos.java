@@ -31,6 +31,15 @@ public class Alunos {
         double mediaFinal = (this.notaProvaA + this.notaProvaB + this.notaTrabalho) / 3;
         return mediaFinal;
     }
+    
+    public double notaNecessariaProvaFinal(){
+        double mediaFinal = mediaFinalAluno();
+        if(mediaFinal < 3) {
+            return (6 - mediaFinal);
+        } else {
+            return 0;
+        }
+    }
 
     public int getMatricula() {
         return matricula;
