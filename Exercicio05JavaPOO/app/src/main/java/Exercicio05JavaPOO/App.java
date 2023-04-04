@@ -27,8 +27,22 @@ public class App {
                 System.out.println("Digite a matricula do aluno: ");
                 matricula = leitor.nextInt();
                 
-                Alunos alunos = new Alunos(10, "Gian", 2, 2.2, 2.5);
+                System.out.println("Digite o nome do aluno: ");
+                nome = leitor.nextLine();
+                
+                System.out.println("Digite a nota da primeira prova do aluno: ");
+                notaProvaA = leitor.nextDouble();
+                
+                System.out.println("Digite a nota da segunda prova do aluno: ");
+                notaProvaB = leitor.nextDouble();
+                
+                System.out.println("Digite a nota do trabalho do aluno: ");
+                notaTrabalho = leitor.nextDouble();
+                
+                Alunos alunos = new Alunos(matricula, nome, notaProvaA, notaProvaB, notaTrabalho);
             
+                System.out.println("Deseja cadastrar as notas de outro aluno? S - Sim, N - Nao");
+                desejaCadastrarNovoAluno = leitor.next().charAt(0);
             }
         
     }
