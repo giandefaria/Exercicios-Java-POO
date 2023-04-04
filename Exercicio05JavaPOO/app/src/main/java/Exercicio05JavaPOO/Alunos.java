@@ -9,5 +9,9 @@ package Exercicio05JavaPOO;
  * @author User
  */
 public class Alunos {
-    
+    private int matricula;
+    private String nome;
+    private double notaProvaA;
+    private double notaProvaB;
+    private double notaTrabalho;
 }
