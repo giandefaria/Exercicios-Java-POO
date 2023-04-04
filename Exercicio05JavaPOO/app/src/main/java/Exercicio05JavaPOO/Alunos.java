@@ -26,6 +26,11 @@ public class Alunos {
         setNotaProvaB(notaProvaB);
         this.notaTrabalho = notaTrabalho;    
     }
+    
+    public double mediaFinalAluno() {
+        double mediaFinal = (this.notaProvaA + this.notaProvaB + this.notaTrabalho) / 3;
+        return mediaFinal;
+    }
 
     public int getMatricula() {
         return matricula;
