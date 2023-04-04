@@ -17,5 +17,7 @@ public class App {
 
     public static void main(String[] args) {
         
+        Elevador elevador = new Elevador(0, 0);
+        
     }
 }
