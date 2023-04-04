@@ -54,6 +54,14 @@ public class Elevador {
     public void subirAndarElevador () {
         System.out.println("Informe quantos andares quer que o elevador suba");
         int quantidadeAndaresParaElevadorSubir = leitor.nextInt();
+        if (quantidadeAndaresParaElevadorSubir  <= (this.totalAndares - this.andarAtual)) {
+            this.andarAtual += quantidadeAndaresParaElevadorSubir;
+            System.out.println("Você chegou ao andar " + this.andarAtual + "!");
+        } else {
+            System.out.println ("Não existe o andar " + (this.andarAtual 
+                    += quantidadeAndaresParaElevadorSubir) + ", o elevador "
+                            + "possui apenas " + this.totalAndares  + " andares!" );
+        }
     }
     
     public void descerAndarElevador () {
