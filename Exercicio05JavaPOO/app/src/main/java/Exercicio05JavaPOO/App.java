@@ -10,6 +10,8 @@ package Exercicio05JavaPOO;
 public class App {
 
     public static void main(String[] args) {
+            
+            Alunos alunos = new Alunos(10, "Gian", 3, 2, 2);
         
     }
 }
