@@ -12,12 +12,30 @@ e. Desce: para descer um andar (não deve descer se já estiver no térreo);
  */
 package Exercicio04JavaPOO;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
         
-        Elevador elevador = new Elevador(0, 0);
+        int capacidadePessoasElevador;
+        int totalAndares;
+        char realizarNovaAcao = 's';
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe a capacidade de pessoas no elevador:");
+        capacidadePessoasElevador = leitor.nextInt();
+        
+        System.out.println("Informe a quantidade de andares que o predio tera");
+        totalAndares = leitor.nextInt();
+        
+        Elevador elevador = new Elevador(capacidadePessoasElevador, totalAndares);
+        
+        while (realizarNovaAcao = 's') {
+        
+        }   
         
     }
 }
