@@ -33,8 +33,16 @@ public class App {
         
         Elevador elevador = new Elevador(capacidadePessoasElevador, totalAndares);
         
-        while (realizarNovaAcao = 's') {
+        while (realizarNovaAcao == 's') {
             
+            System.out.println("""
+                               Selecione o que deseja fazer:
+                               1 - para pessoas entrando no elevador;
+                               2 - para pessoas saindo do elevador;
+                               3 - para informar a quantidade de andares que o elevador deve subir;
+                               4 - para informar a quantidade de andares que o elevador deve descer;
+                               5 - nada a fazer;
+                               """);
             
             System.out.println("Deseja realizar alguma outra ação? S - Sim, N - Nao");
             realizarNovaAcao = leitor.next().charAt(0);
