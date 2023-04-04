@@ -26,6 +26,7 @@ public class App {
                 
                 System.out.println("Digite a matricula do aluno: ");
                 matricula = leitor.nextInt();
+                leitor.nextLine();
                 
                 System.out.println("Digite o nome do aluno: ");
                 nome = leitor.nextLine();
