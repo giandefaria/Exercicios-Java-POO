@@ -37,6 +37,7 @@ public class Alunos {
         if(mediaFinal < 3) {
             return (6 - mediaFinal);
         } else {
+            System.out.println("Aprovado");
             return 0;
         }
     }
@@ -69,7 +70,7 @@ public class Alunos {
                 repete = 'n';
             } else {
                 System.out.println("Nota inválida na ProvaA. Digite de 0 até 2.5");
-                notaProvaA = leitor.nextFloat();
+                notaProvaA = leitor.nextDouble();
                 repete = 's';
             }
         }
@@ -87,7 +88,7 @@ public class Alunos {
                 repete = 'n';
             } else {
                 System.out.println("Nota inválida na ProvaB. Digite de 0 até 2.5");
-                notaProvaB = leitor.nextFloat();
+                notaProvaB = leitor.nextDouble();
                 repete = 's';
             }
         }
@@ -98,7 +99,17 @@ public class Alunos {
     }
 
     public void setNotaTrabalho(double notaTrabalho) {
-        this.notaTrabalho = notaTrabalho;
+        char repete = 's';
+        while (repete == 's') {
+            if(notaTrabalho >= 0 && notaTrabalho <= 2) {
+                this.notaTrabalho = notaTrabalho;
+                repete = 'n';
+            } else {
+                System.out.println("Nota inválida do Trabalho. Digite de 0 até 2");
+                notaTrabalho = leitor.nextDouble();
+                repete = 's';
+            }
+        }
     }
     
     
