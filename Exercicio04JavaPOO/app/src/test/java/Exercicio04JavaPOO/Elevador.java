@@ -67,6 +67,13 @@ public class Elevador {
     public void descerAndarElevador () {
         System.out.println("Informe quantos andares quer que o elevador desça");
         int quantidadeAndaresParaElevadorDescer = leitor.nextInt();
+        if (quantidadeAndaresParaElevadorDescer <= this.andarAtual) {
+            this.andarAtual -= quantidadeAndaresParaElevadorDescer;
+            System.out.println("Você chegou ao andar " + this.andarAtual + "!");
+        } else {
+            System.out.println ("Não existe andares abaixo do terreo."
+                    + " Andar atual " + this.andarAtual);
+        }
     }
     
 }
