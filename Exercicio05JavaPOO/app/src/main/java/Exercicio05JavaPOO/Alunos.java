@@ -22,4 +22,55 @@ public class Alunos {
         this.notaProvaB = notaProvaB;
         this.notaTrabalho = notaTrabalho;    
     }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getNotaProvaA() {
+        return notaProvaA;
+    }
+
+    public void setNotaProvaA(double notaProvaA) {
+        char repete = 's';
+        while (repete == 's') {
+            if(notaProvaA >= 0 && notaProvaA <= 2.5) {
+                this.notaProvaA = notaProvaA;
+                repete = 'n';
+            } else {
+                System.out.println("Nota inválida. Digite de 0 até 2.5");
+                repete = 's';
+            }
+        }
+    }
+
+    public double getNotaProvaB() {
+        return notaProvaB;
+    }
+
+    public void setNotaProvaB(double notaProvaB) {
+        this.notaProvaB = notaProvaB;
+    }
+
+    public double getNotaTrabalho() {
+        return notaTrabalho;
+    }
+
+    public void setNotaTrabalho(double notaTrabalho) {
+        this.notaTrabalho = notaTrabalho;
+    }
+    
+    
 }
