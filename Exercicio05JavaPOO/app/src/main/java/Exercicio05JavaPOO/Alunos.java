@@ -23,7 +23,7 @@ public class Alunos {
         this.matricula = matricula;
         this.nome = nome;
         setNotaProvaA(notaProvaA);
-        this.notaProvaB = notaProvaB;
+        setNotaProvaB(notaProvaB);
         this.notaTrabalho = notaTrabalho;    
     }
 
@@ -66,7 +66,17 @@ public class Alunos {
     }
 
     public void setNotaProvaB(double notaProvaB) {
-        this.notaProvaB = notaProvaB;
+        char repete = 's';
+        while (repete == 's') {
+            if(notaProvaB >= 0 && notaProvaB <= 2.5) {
+                this.notaProvaB = notaProvaB;
+                repete = 'n';
+            } else {
+                System.out.println("Nota inválida. Digite de 0 até 2.5");
+                notaProvaB = leitor.nextFloat();
+                repete = 's';
+            }
+        }
     }
 
     public double getNotaTrabalho() {
