@@ -26,6 +26,8 @@ public class Alunos {
         setNotaProvaA(notaProvaA);
         setNotaProvaB(notaProvaB);
         setNotaTrabalho(notaTrabalho);
+        System.out.println("Nome do aluno: " + nome);
+        Sytem.out.println("Matricula do aluno: " + matricula);
         System.out.println("Media final do aluno: " + mediaFinalAluno());
         System.out.println("Nota necessaria na prova final: " + notaNecessariaProvaFinal());
     }
