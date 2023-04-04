@@ -34,7 +34,10 @@ public class App {
         Elevador elevador = new Elevador(capacidadePessoasElevador, totalAndares);
         
         while (realizarNovaAcao = 's') {
-        
+            
+            
+            System.out.println("Deseja realizar alguma outra ação? S - Sim, N - Nao");
+            realizarNovaAcao = leitor.next().charAt(0);
         }   
         
     }
