@@ -54,7 +54,7 @@ public class Alunos {
                 this.notaProvaA = notaProvaA;
                 repete = 'n';
             } else {
-                System.out.println("Nota inválida. Digite de 0 até 2.5");
+                System.out.println("Nota inválida na ProvaA. Digite de 0 até 2.5");
                 notaProvaA = leitor.nextFloat();
                 repete = 's';
             }
@@ -72,7 +72,7 @@ public class Alunos {
                 this.notaProvaB = notaProvaB;
                 repete = 'n';
             } else {
-                System.out.println("Nota inválida. Digite de 0 até 2.5");
+                System.out.println("Nota inválida na ProvaB. Digite de 0 até 2.5");
                 notaProvaB = leitor.nextFloat();
                 repete = 's';
             }
