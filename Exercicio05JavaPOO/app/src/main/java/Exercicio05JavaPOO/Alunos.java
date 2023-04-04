@@ -55,6 +55,7 @@ public class Alunos {
                 repete = 'n';
             } else {
                 System.out.println("Nota inválida. Digite de 0 até 2.5");
+                notaProvaA = leitor.nextFloat();
                 repete = 's';
             }
         }
