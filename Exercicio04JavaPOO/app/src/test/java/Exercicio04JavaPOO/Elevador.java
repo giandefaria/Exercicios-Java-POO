@@ -26,7 +26,7 @@ public class Elevador {
     
     }
     
-    public void entra () {
+    public void entraPessoa () {
         int quantidadePessoasEntrando = leitor.nextInt();
         if (quantidadePessoasEntrando < (this.capacidadeElevador - this.pessoasNoElevador)) {
             this.pessoasNoElevador += quantidadePessoasEntrando;
@@ -34,6 +34,15 @@ public class Elevador {
             System.out.println("Elevador só possui capacidade para mais " 
                     + (this.capacidadeElevador - this.pessoasNoElevador) + " pessoas.");
         }
+    }
+    
+    public void saiPessoa () {
+        int quantidadePessoasSaindo = leitor.nextInt();
+        if (this.pessoasNoElevador > 0 && quantidadePessoasSaindo <= this.pessoasNoElevador) {
+            
+        
+        }
+        
     }
     
 }
