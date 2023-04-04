@@ -11,7 +11,7 @@ public class App {
 
     public static void main(String[] args) {
             
-            Alunos alunos = new Alunos(10, "Gian", 3, 2.8, 2);
+            Alunos alunos = new Alunos(10, "Gian", 2, 2.2, 2.5);
         
     }
 }

@@ -24,7 +24,9 @@ public class Alunos {
         this.nome = nome;
         setNotaProvaA(notaProvaA);
         setNotaProvaB(notaProvaB);
-        this.notaTrabalho = notaTrabalho;    
+        setNotaTrabalho(notaTrabalho);
+        System.out.println("Media final do aluno: " + mediaFinalAluno());
+        System.out.println("Nota necessaria na prova final: " + notaNecessariaProvaFinal());
     }
     
     public double mediaFinalAluno() {
@@ -37,7 +39,6 @@ public class Alunos {
         if(mediaFinal < 3) {
             return (6 - mediaFinal);
         } else {
-            System.out.println("Aprovado");
             return 0;
         }
     }
