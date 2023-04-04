@@ -22,7 +22,7 @@ public class Alunos {
     public Alunos (int matricula, String nome, double notaProvaA, double notaProvaB, double notaTrabalho) {
         this.matricula = matricula;
         this.nome = nome;
-        this.notaProvaA = notaProvaA;
+        setNotaProvaA(notaProvaA);
         this.notaProvaB = notaProvaB;
         this.notaTrabalho = notaTrabalho;    
     }
