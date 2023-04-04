@@ -4,6 +4,8 @@
  */
 package Exercicio05JavaPOO;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -14,6 +16,8 @@ public class Alunos {
     private double notaProvaA;
     private double notaProvaB;
     private double notaTrabalho;
+    
+    Scanner leitor = new Scanner(System.in);
     
     public Alunos (int matricula, String nome, double notaProvaA, double notaProvaB, double notaTrabalho) {
         this.matricula = matricula;
