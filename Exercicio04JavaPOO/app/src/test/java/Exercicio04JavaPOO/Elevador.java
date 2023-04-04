@@ -46,8 +46,11 @@ public class Elevador {
             System.out.println("Valor inválido. Nao há ninguém dentro do elevador "
                     + "ou a quantidade de pessoas saindo e maior que a quantidade "
                     + "de pessoas no elevador, sendo invalido o valor.");
-        }
-        
+        }   
+    }
+    
+    public void subirElevador () {
+        int quantidadeAndaresParaElevadorSubir = leitor.nextInt();
     }
     
 }
