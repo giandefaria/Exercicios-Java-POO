@@ -19,6 +19,7 @@ public class Alunos {
     
     Scanner leitor = new Scanner(System.in);
     
+    //construtor
     public Alunos (int matricula, String nome, double notaProvaA, double notaProvaB, double notaTrabalho) {
         this.matricula = matricula;
         this.nome = nome;
@@ -30,14 +31,14 @@ public class Alunos {
     }
     
     public double mediaFinalAluno() {
-        double mediaFinal = (this.notaProvaA + this.notaProvaB + this.notaTrabalho) / 3;
+        double mediaFinal = (this.notaProvaA + this.notaProvaB + this.notaTrabalho);
         return mediaFinal;
     }
     
     public double notaNecessariaProvaFinal(){
         double mediaFinal = mediaFinalAluno();
-        if(mediaFinal < 3) {
-            return (6 - mediaFinal);
+        if(mediaFinal < 4) {
+            return (4 - mediaFinal);
         } else {
             return 0;
         }

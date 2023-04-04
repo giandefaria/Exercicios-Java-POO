@@ -7,11 +7,29 @@ b. final: calcula quanto o aluno precisa para a prova final (retorna zero se ele
  */
 package Exercicio05JavaPOO;
 
-public class App {
+import java.util.Scanner;
 
+public class App {
+//para aprovação, precisa nota 4. Caso não atinga, a prova final o aluno deverá atingir a nota faltante para completar 4.
     public static void main(String[] args) {
             
-            Alunos alunos = new Alunos(10, "Gian", 2, 2.2, 2.5);
+            char desejaCadastrarNovoAluno = 's';
+            int matricula;
+            String nome;
+            double notaProvaA;
+            double notaProvaB;
+            double notaTrabalho;
+            
+            Scanner leitor = new Scanner(System.in);
+            
+            while(desejaCadastrarNovoAluno == 's' || desejaCadastrarNovoAluno == 'S') {
+                
+                System.out.println("Digite a matricula do aluno: ");
+                matricula = leitor.nextInt();
+                
+                Alunos alunos = new Alunos(10, "Gian", 2, 2.2, 2.5);
+            
+            }
         
     }
 }
