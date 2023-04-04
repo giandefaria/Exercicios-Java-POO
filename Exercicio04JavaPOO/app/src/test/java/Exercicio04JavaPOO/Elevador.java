@@ -49,7 +49,8 @@ public class Elevador {
         }   
     }
     
-    public void subirElevador () {
+    public void subirElevadorAndar () {
+        System.out.println("Informe quantos andares quer que o elevador suba");
         int quantidadeAndaresParaElevadorSubir = leitor.nextInt();
     }
     
