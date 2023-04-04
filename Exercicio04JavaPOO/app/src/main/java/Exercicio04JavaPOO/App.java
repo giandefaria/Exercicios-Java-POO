@@ -43,6 +43,15 @@ public class App {
                                4 - para informar a quantidade de andares que o elevador deve descer;
                                5 - nada a fazer;
                                """);
+            int opcao = leitor.nextInt();
+            
+            switch(opcao){
+                case 1 -> elevador.entraPessoa();
+                case 2 -> elevador.saiPessoa();
+                case 3 -> elevador.subirAndarElevador();
+                case 4 -> elevador.descerAndarElevador();
+                default -> System.out.println  ("nada a fazer");
+            }
             
             System.out.println("Deseja realizar alguma outra ação? S - Sim, N - Nao");
             realizarNovaAcao = leitor.next().charAt(0);
