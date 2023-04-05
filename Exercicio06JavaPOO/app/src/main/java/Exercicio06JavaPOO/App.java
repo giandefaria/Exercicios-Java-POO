@@ -21,12 +21,18 @@ public class App {
 
     public static void main(String[] args) {
         
+        String descricaoItem;
+        int numeroItem;
+        int quantidade;
+        double precoItem;
+        
         char desejaContinuar = 's';
         
         Scanner leitor = new Scanner(System.in);
         
         while(desejaContinuar == 's' || desejaContinuar == 'S'){
-        
+            
+            Invoice fatura = new Invoice(numeroItem, descricaoItem, quantidade, precoItem);
             
             System.out.println("Deseja emitir uma nova fatura? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
