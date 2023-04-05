@@ -46,6 +46,8 @@ public class App {
             
             Invoice fatura = new Invoice(numeroItem, descricaoItem, quantidade, precoItem);
             
+            System.out.println("Valor total da fatura = R$ " + fatura.getInvoiceAmount());
+            
             System.out.println("Deseja emitir uma nova fatura? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
         }
