@@ -32,6 +32,18 @@ public class App {
         
         while(desejaContinuar == 's' || desejaContinuar == 'S'){
             
+            System.out.println("Informe a descrição do produto: ");
+            descricaoItem = leitor.nextLine();
+            
+            System.out.println("Informe o numero de cadastro do item:");
+            numeroItem = leitor.nextInt();
+            
+            System.out.println("Informe a quantidade do item comprado:");
+            quantidade = leitor.nextInt();
+            
+            System.out.println("Informe o preco unitario do item:");
+            precoItem = leitor.nextDouble();
+            
             Invoice fatura = new Invoice(numeroItem, descricaoItem, quantidade, precoItem);
             
             System.out.println("Deseja emitir uma nova fatura? S - Sim, N - Não");
