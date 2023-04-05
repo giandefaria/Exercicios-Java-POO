@@ -21,6 +21,10 @@ public class Invoice {
         setQuantidade(quantidade);
         setPrecoItem(precoItem);
     }
+    
+    public double getInvoiceAmount(){
+    
+    }
 
     public int getNumeroIten() {
         return numeroIten;
