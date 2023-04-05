@@ -20,6 +20,10 @@ public class Invoice {
         this.descricaoItem = descricaoItem;
         setQuantidade(quantidade);
         setPrecoItem(precoItem);
+        
+        System.out.println("Nome do produto: " + descricaoItem);
+        System.out.println("Preco unitario: R$ " + this.precoItem);
+        System.out.println("Quantidade comprada: " + this.quantidade);
     }
     
     public double getInvoiceAmount(){
