@@ -23,7 +23,7 @@ public class Invoice {
     }
     
     public double getInvoiceAmount(){
-    
+        return (this.quantidade * this.precoItem);    
     }
 
     public int getNumeroIten() {
