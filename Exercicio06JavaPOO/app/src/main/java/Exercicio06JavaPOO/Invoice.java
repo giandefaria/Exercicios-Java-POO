@@ -54,8 +54,12 @@ public class Invoice {
         return precoItem;
     }
 
-    public void setPrecoItem(double precoItem) {
-        this.precoItem = precoItem;
+    public void setPrecoItem(double precoItem) {  
+        if(precoItem > 0) {
+            this.precoItem = precoItem;
+        } else {
+            this.precoItem = 0.0;
+        }
     }
     
     
