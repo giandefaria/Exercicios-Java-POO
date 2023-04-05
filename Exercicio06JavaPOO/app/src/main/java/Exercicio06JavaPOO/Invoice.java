@@ -43,7 +43,11 @@ public class Invoice {
     }
 
     public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+        if(quantidade > 0) {
+            this.quantidade = quantidade;
+        } else {
+            this.quantidade = 0;
+        }
     }
 
     public double getPrecoItem() {
