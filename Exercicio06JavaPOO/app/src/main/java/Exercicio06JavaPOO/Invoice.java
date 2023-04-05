@@ -21,6 +21,38 @@ public class Invoice {
         this.quantidade = quantidade;
         this.precoItem = precoItem;
     }
+
+    public int getNumeroIten() {
+        return numeroIten;
+    }
+
+    public void setNumeroIten(int numeroIten) {
+        this.numeroIten = numeroIten;
+    }
+
+    public String getDescricaoItem() {
+        return descricaoItem;
+    }
+
+    public void setDescricaoItem(String descricaoItem) {
+        this.descricaoItem = descricaoItem;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public double getPrecoItem() {
+        return precoItem;
+    }
+
+    public void setPrecoItem(double precoItem) {
+        this.precoItem = precoItem;
+    }
     
     
 }
