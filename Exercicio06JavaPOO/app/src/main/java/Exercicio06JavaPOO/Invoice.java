@@ -14,5 +14,13 @@ public class Invoice {
     private String descricaoItem;
     private int quantidade;
     private double precoItem;
+
+    public Invoice(int numeroIten, String descricaoItem, int quantidade, double precoItem) {
+        this.numeroIten = numeroIten;
+        this.descricaoItem = descricaoItem;
+        this.quantidade = quantidade;
+        this.precoItem = precoItem;
+    }
+    
     
 }
