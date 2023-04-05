@@ -15,10 +15,23 @@ capacidades da classe Invoice.
  */
 package Exercicio06JavaPOO;
 
+import java.util.Scanner;
+
 public class App {
 
-
     public static void main(String[] args) {
+        
+        char desejaContinuar = 's';
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        while(desejaContinuar == 's' || desejaContinuar == 'S'){
+        
+            
+            System.out.println("Deseja emitir uma nova fatura? S - Sim, N - Não");
+            desejaContinuar = leitor.next().charAt(0);
+        }
+        
         
     }
 }
