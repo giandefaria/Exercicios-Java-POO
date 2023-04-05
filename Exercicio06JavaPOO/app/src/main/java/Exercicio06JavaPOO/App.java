@@ -50,6 +50,7 @@ public class App {
             
             System.out.println("Deseja emitir uma nova fatura? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
+            leitor.nextLine();
         }
         
         
