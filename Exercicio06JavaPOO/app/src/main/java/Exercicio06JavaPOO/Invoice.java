@@ -18,8 +18,8 @@ public class Invoice {
     public Invoice(int numeroIten, String descricaoItem, int quantidade, double precoItem) {
         this.numeroIten = numeroIten;
         this.descricaoItem = descricaoItem;
-        this.quantidade = quantidade;
-        this.precoItem = precoItem;
+        setQuantidade(quantidade);
+        setPrecoItem(precoItem);
     }
 
     public int getNumeroIten() {
