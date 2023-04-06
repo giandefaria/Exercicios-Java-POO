@@ -55,6 +55,12 @@ public class Data {
             }
         }
         
+        if(verifica == false) {
+            this.dia = 01;
+            this.mes = 01;
+            this.ano = 0001;
+        }
+        
     }
     
 }
