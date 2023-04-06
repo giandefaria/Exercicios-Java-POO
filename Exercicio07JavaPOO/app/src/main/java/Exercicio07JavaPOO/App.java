@@ -14,8 +14,11 @@ package Exercicio07JavaPOO;
 
 public class App {
 
-
     public static void main(String[] args) {
+        
+        Funcionario funcionarioA = new Funcionario("Joao", "Ramos", 1320.50);
+        Funcionario funcionarioB = new Funcionario("Carlos", "Quadros", 2000.00);
+        
         
     }
 }
