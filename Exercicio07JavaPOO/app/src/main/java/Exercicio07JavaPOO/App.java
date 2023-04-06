@@ -19,6 +19,8 @@ public class App {
         Funcionario funcionarioA = new Funcionario("Joao", "Ramos", 1320.50);
         Funcionario funcionarioB = new Funcionario("Carlos", "Quadros", 2000.00);
         
+        System.out.println("Salario anual do funcionario Joao: R$ " + (funcionarioA.getSalarioFuncionario() * 12));
+        System.out.println("Salario anual do funcionario Carlos: R$ " + (funcionarioB.getSalarioFuncionario() * 12));
         
     }
 }
