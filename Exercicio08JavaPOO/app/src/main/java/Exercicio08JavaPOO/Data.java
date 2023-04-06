@@ -63,4 +63,12 @@ public class Data {
         
     }
     
+    public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) {
+        //talvez  utilizar classe Data para comparação
+        return 0;//iguais
+        //return 1;//data dessa classe maior que da outra
+        //return -1;//data da outra classe maior
+    }
+    
+    
 }
