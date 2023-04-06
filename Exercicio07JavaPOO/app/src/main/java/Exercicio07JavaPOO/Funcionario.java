@@ -19,5 +19,31 @@ public class Funcionario {
         this.sobrenomeFuncionario = sobrenomeFuncionario;
         this.salarioFuncionario = salarioFuncionario;
     }
+
+    public String getNomeFuncionario() {
+        return nomeFuncionario;
+    }
+
+    public void setNomeFuncionario(String nomeFuncionario) {
+        this.nomeFuncionario = nomeFuncionario;
+    }
+
+    public String getSobrenomeFuncionario() {
+        return sobrenomeFuncionario;
+    }
+
+    public void setSobrenomeFuncionario(String sobrenomeFuncionario) {
+        this.sobrenomeFuncionario = sobrenomeFuncionario;
+    }
+
+    public double getSalarioFuncionario() {
+        return salarioFuncionario;
+    }
+
+    public void setSalarioFuncionario(double salarioFuncionario) {
+        this.salarioFuncionario = salarioFuncionario;
+    }
+    
+    
     
 }
