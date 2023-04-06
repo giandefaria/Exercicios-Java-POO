@@ -41,7 +41,11 @@ public class Funcionario {
     }
 
     public void setSalarioFuncionario(double salarioFuncionario) {
-        this.salarioFuncionario = salarioFuncionario;
+        if(salarioFuncionario >= 0){
+            this.salarioFuncionario = salarioFuncionario;
+        } else {
+            this.salarioFuncionario = 0;
+        }
     }
     
     
