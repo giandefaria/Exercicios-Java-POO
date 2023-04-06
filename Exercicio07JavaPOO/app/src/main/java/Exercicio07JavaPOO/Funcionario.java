@@ -14,4 +14,10 @@ public class Funcionario {
     private String sobrenomeFuncionario;
     private double salarioFuncionario;
     
+    public Funcionario(String nomeFuncionario, String sobrenomeFuncionario, double salarioFuncionario){
+        this.nomeFuncionario = nomeFuncionario;
+        this.sobrenomeFuncionario = sobrenomeFuncionario;
+        this.salarioFuncionario = salarioFuncionario;
+    }
+    
 }
