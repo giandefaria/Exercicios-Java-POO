@@ -10,4 +10,8 @@ package Exercicio07JavaPOO;
  */
 public class Funcionario {
     
+    private String nomeFuncionario;
+    private String sobrenomeFuncionario;
+    private double salarioFuncionario;
+    
 }
