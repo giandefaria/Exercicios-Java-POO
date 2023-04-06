@@ -17,7 +17,7 @@ public class Funcionario {
     public Funcionario(String nomeFuncionario, String sobrenomeFuncionario, double salarioFuncionario){
         this.nomeFuncionario = nomeFuncionario;
         this.sobrenomeFuncionario = sobrenomeFuncionario;
-        this.salarioFuncionario = salarioFuncionario;
+        setSalarioFuncionario(salarioFuncionario);
     }
 
     public String getNomeFuncionario() {
