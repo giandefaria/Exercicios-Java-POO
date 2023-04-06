@@ -22,5 +22,10 @@ public class App {
         System.out.println("Salario anual do funcionario Joao: R$ " + (funcionarioA.getSalarioFuncionario() * 12));
         System.out.println("Salario anual do funcionario Carlos: R$ " + (funcionarioB.getSalarioFuncionario() * 12));
         
+        funcionarioA.setSalarioFuncionario(funcionarioA.getSalarioFuncionario() + (funcionarioA.getSalarioFuncionario() * 0.10));
+        System.out.println("Salario reajustado do funcionario A: R$ " + funcionarioA.getSalarioFuncionario());
+        
+        funcionarioB.setSalarioFuncionario(funcionarioB.getSalarioFuncionario() + (funcionarioB.getSalarioFuncionario() * 0.10));
+        System.out.println("Salario reajustado do funcionario B: R$ " + funcionarioB.getSalarioFuncionario());
     }
 }
