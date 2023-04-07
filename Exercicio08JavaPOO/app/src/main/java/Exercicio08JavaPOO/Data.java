@@ -72,8 +72,13 @@ public class Data {
     }
     
     public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) {
+        if(this.dia == diaOutraClasse && this.mes == mesOutraClasse && this.ano == anoOutraClasse){
+            return 0;
+        }
+        
+
         //talvez  utilizar classe Data para comparação
-        return 0;//iguais
+        //return 0;//iguais
         //return 1;//data dessa classe maior que da outra
         //return -1;//data da outra classe maior
     }
