@@ -4,6 +4,11 @@
  */
 package Exercicio08JavaPOO;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author User
@@ -71,16 +76,27 @@ public class Data {
         
     }
     
-    public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) {
-        if(this.dia == diaOutraClasse && this.mes == mesOutraClasse && this.ano == anoOutraClasse){
-            return 0;
-        }
+    public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) throws ParseException {
         
+        SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date dateA = originalFormat.parse(this.dia + "/" + this.mes + "/" + this.ano);
+        System.out.println(dateA);
 
+        
+        return 0;
         //talvez  utilizar classe Data para comparação
         //return 0;//iguais
         //return 1;//data dessa classe maior que da outra
         //return -1;//data da outra classe maior
+    }
+    
+    private void formatarData() throws ParseException{
+         
+        String converte = this.dia + "/" + this.mes + "/" + this.ano;
+        SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = originalFormat.parse(converte);
+        System.out.println(date);
+                  
     }
     
     public boolean isBissexto(int ano){

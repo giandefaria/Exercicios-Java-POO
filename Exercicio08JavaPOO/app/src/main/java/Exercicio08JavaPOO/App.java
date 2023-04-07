@@ -18,14 +18,24 @@ mesmos valores de atributos e retorna sua referência pelo método
  */
 package Exercicio08JavaPOO;
 
+import java.text.ParseException;
+
 public class App {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         
-        Data data = new Data(29, 2, 2020);
-        System.out.println(data.getDia() + "/" + data.getMes() + "/" + data.getAno());
-        System.out.println("Mes informado: " + data.getMesPorExtenso());
+        Data dataA = new Data(29, 12, 2020);
+        System.out.println(dataA.getDia() + "/" + dataA.getMes() + "/" + dataA.getAno());
+        System.out.println("Mes informado: " + dataA.getMesPorExtenso());
+        
+                
+        Data dataB = new Data(25, 2, 2020);
+        System.out.println(dataB.getDia() + "/" + dataB.getMes() + "/" + dataB.getAno());
+        System.out.println("Mes informado: " + dataB.getMesPorExtenso());
+        
+        System.out.println(dataA.comparaDatas(dataB.getDia(), dataB.getMes(), dataB.getAno()));
+
         
     }
 }
