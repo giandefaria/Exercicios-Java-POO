@@ -85,7 +85,14 @@ public class Data {
         
         Date dateB = formatoPadrao.parse(diaOutraClasse + "/" + mesOutraClasse + "/" + anoOutraClasse);
         System.out.println(dateB);
-
+        
+        if ( dateA.compareTo(dateB) == 0 ){
+            System.out.println("as datas sao iguais");
+        } else if ( dateA.compareTo(dateB) > 0 ) {
+            System.out.println("data maior que a parametro");
+        } else {
+            System.out.println("data menor que a parametro");   
+        }
         
         return 0;
         //talvez  utilizar classe Data para comparação
