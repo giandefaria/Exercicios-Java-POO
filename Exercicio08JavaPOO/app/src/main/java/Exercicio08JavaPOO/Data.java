@@ -104,6 +104,14 @@ public class Data {
             case 3 -> mesPorExtenso = "março";
             case 4 -> mesPorExtenso = "abril";
             case 5 -> mesPorExtenso = "maio";
+            case 6 -> mesPorExtenso = "junho";
+            case 7 -> mesPorExtenso = "julho";
+            case 8 -> mesPorExtenso = "agosto";
+            case 9 -> mesPorExtenso = "setembro";
+            case 10 -> mesPorExtenso = "outubro";
+            case 11 -> mesPorExtenso = "novembro";
+            case 12 -> mesPorExtenso = "dezembro";
+            default -> mesPorExtenso = "mes invalido";
         }
         
         return mesPorExtenso;
