@@ -94,11 +94,11 @@ public class Data {
         return mes;
     }
     
-    public String mesPorExtenso(int mes){
+    public String getMesPorExtenso(){
         
         String mesPorExtenso;
         
-        switch(mes){
+        switch(this.mes){
             case 1 -> mesPorExtenso = "janeiro";
             case 2 -> mesPorExtenso = "fevereiro";
             case 3 -> mesPorExtenso = "março";
