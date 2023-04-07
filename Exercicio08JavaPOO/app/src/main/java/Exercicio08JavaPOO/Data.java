@@ -35,13 +35,13 @@ public class Data {
         }
         
         //validando o dia
-        if(mes == 1 || (mes % 2 == 0 && mes != 2)) {
+        if(mes == 1 || (mes % 2 == 0 && mes != 2)) { //meses com 31 dias
             if (dia > 0 && dia <= 31) {
                 this.dia = dia;
             } else {
                 this.verifica = false;
             }                        
-        } else if ( mes == 2) {
+        } else if ( mes == 2) { //mes de fevereiro. 29 dias se bissexto
             if(isBissexto(ano)){
                 if (dia > 0 && dia < 29) {
                     this.dia = dia;                
@@ -55,7 +55,7 @@ public class Data {
                     this.verifica = false;
                 }          
             }           
-        } else {
+        } else { //demais meses 30 dias
             if (dia > 0 && dia <= 30) {
                 this.dia = dia;
             } else {
