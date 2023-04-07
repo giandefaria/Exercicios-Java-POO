@@ -23,7 +23,7 @@ import java.text.ParseException;
 public class App {
 
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException, CloneNotSupportedException {
         
         Data dataA = new Data(31, 12, 2019);
         System.out.println(dataA.getDia() + "/" + dataA.getMes() + "/" + dataA.getAno());
@@ -36,6 +36,7 @@ public class App {
         
         dataA.comparaDatas(dataB.getDia(), dataB.getMes(), dataB.getAno());
 
-        
+        Data objetoClonado = dataA.clone();
+        System.out.println("Dia do objeto clonado: " + objetoClonado.getDia());
     }
 }

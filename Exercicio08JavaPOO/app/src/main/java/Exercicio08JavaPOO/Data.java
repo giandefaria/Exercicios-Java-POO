@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author User
  */
-public class Data {
+public class Data implements Cloneable { //tenho que implementar a interface cloneable para poder clonar o objeto
     
     private int dia;
     private int mes;
@@ -147,8 +147,9 @@ public class Data {
         return ano;
     }
     
-    public Object clone() throws CloneNotSupportedException{
-        return super.clone();
+   @Override
+    public Data clone() throws CloneNotSupportedException {
+        return (Data) super.clone();
     }
     
 }
