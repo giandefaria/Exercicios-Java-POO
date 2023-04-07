@@ -79,8 +79,12 @@ public class Data {
     public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) throws ParseException {
         
         SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
+        
         Date dateA = originalFormat.parse(this.dia + "/" + this.mes + "/" + this.ano);
         System.out.println(dateA);
+        
+        Date dateB = originalFormat.parse(diaOutraClasse + "/" + mesOutraClasse + "/" + anoOutraClasse);
+        System.out.println(dateB);
 
         
         return 0;
