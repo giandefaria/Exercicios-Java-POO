@@ -24,48 +24,11 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
         this.mes = mes;
         this.ano = ano;
         
-        //validando ano
-        if(ano <= 2023 && ano >= 1800){
-            this.ano = ano;
-        } else {
-            this.verifica = false;
-        }
+        validarAno(ano);
         
-        //validando mes
-        if(mes > 0 && mes <= 12) {
-            this.mes = mes;                    
-        } else {
-            this.verifica = false;
-        }
+        validarMes(mes);
         
-        //validando o dia
-        if(mes == 1 || (mes % 2 == 0 && mes != 2)) { //meses com 31 dias
-            if (dia > 0 && dia <= 31) {
-                this.dia = dia;
-            } else {
-                this.verifica = false;
-            }                        
-        } else if ( mes == 2) { //mes de fevereiro. 29 dias se bissexto
-            if(isBissexto(ano)){
-                if (dia > 0 && dia <= 29) {
-                    this.dia = dia;                
-                } else{
-                    this.verifica = false;
-                }
-            } else {
-                if (dia > 0 && dia <= 28) {
-                    this.dia = dia;                
-                } else{
-                    this.verifica = false;
-                }          
-            }           
-        } else { //demais meses 30 dias
-            if (dia > 0 && dia <= 30) {
-                this.dia = dia;
-            } else {
-                this.verifica = false;
-            }
-        }
+        validarDia(mes, dia, ano);
         
         if(verifica == false) {
             this.dia = 01;
@@ -73,6 +36,58 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
             this.ano = 0001;
         }
         
+    }
+
+    private void validarDia(int mes1, int dia1, int ano1) {
+        //validando o dia
+        if (mes1 == 1 || (mes1 % 2 == 0 && mes1 != 2)) {
+            //meses com 31 dias
+            if (dia1 > 0 && dia1 <= 31) {
+                this.dia = dia1;
+            } else {
+                this.verifica = false;
+            }
+        } else if (mes1 == 2) {
+            //mes de fevereiro. 29 dias se bissexto
+            if (isBissexto(ano1)) {
+                if (dia1 > 0 && dia1 <= 29) {
+                    this.dia = dia1;
+                } else {
+                    this.verifica = false;
+                }
+            } else {
+                if (dia1 > 0 && dia1 <= 28) {
+                    this.dia = dia1;
+                } else {
+                    this.verifica = false;
+                }
+            }
+        } else {
+            //demais meses 30 dias
+            if (dia1 > 0 && dia1 <= 30) {
+                this.dia = dia1;
+            } else {
+                this.verifica = false;
+            }
+        }
+    }
+
+    private void validarMes(int mes1) {
+        //validando mes
+        if (mes1 > 0 && mes1 <= 12) {
+            this.mes = mes1;
+        } else {
+            this.verifica = false;
+        }
+    }
+
+    private void validarAno(int ano1) {
+        //validando ano
+        if (ano1 <= 2023 && ano1 >= 1800) {
+            this.ano = ano1;
+        } else {
+            this.verifica = false;
+        }
     }
     
     public void comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) throws ParseException {
