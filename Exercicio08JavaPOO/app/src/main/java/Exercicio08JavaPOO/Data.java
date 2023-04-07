@@ -43,13 +43,13 @@ public class Data {
             }                        
         } else if ( mes == 2) { //mes de fevereiro. 29 dias se bissexto
             if(isBissexto(ano)){
-                if (dia > 0 && dia < 29) {
+                if (dia > 0 && dia <= 29) {
                     this.dia = dia;                
                 } else{
                     this.verifica = false;
                 }
             } else {
-                if (dia > 0 && dia < 28) {
+                if (dia > 0 && dia <= 28) {
                     this.dia = dia;                
                 } else{
                     this.verifica = false;

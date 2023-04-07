@@ -23,7 +23,7 @@ public class App {
 
     public static void main(String[] args) {
         
-        Data data = new Data(10, 2, 2024);
+        Data data = new Data(29, 02, 2020);
         System.out.println(data.getDia() + "/" + data.getMes() + "/" + data.getAno());
         
     }
