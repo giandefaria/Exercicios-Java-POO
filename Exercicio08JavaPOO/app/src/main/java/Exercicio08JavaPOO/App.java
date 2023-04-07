@@ -25,16 +25,16 @@ public class App {
 
     public static void main(String[] args) throws ParseException {
         
-        Data dataA = new Data(29, 12, 2018);
+        Data dataA = new Data(31, 12, 2019);
         System.out.println(dataA.getDia() + "/" + dataA.getMes() + "/" + dataA.getAno());
         System.out.println("Mes informado: " + dataA.getMesPorExtenso());
         
                 
-        Data dataB = new Data(29, 12, 2018);
+        Data dataB = new Data(29, 12, 2019);
         System.out.println(dataB.getDia() + "/" + dataB.getMes() + "/" + dataB.getAno());
         System.out.println("Mes informado: " + dataB.getMesPorExtenso());
         
-        System.out.println(dataA.comparaDatas(dataB.getDia(), dataB.getMes(), dataB.getAno()));
+        dataA.comparaDatas(dataB.getDia(), dataB.getMes(), dataB.getAno());
 
         
     }

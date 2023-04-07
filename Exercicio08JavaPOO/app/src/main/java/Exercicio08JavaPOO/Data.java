@@ -4,7 +4,6 @@
  */
 package Exercicio08JavaPOO;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -76,7 +75,7 @@ public class Data {
         
     }
     
-    public int comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) throws ParseException {
+    public void comparaDatas (int diaOutraClasse, int mesOutraClasse, int anoOutraClasse) throws ParseException {
         
         SimpleDateFormat formatoPadrao = new SimpleDateFormat("dd/MM/yyyy");
         
@@ -87,18 +86,13 @@ public class Data {
         System.out.println(dateB);
         
         if ( dateA.compareTo(dateB) == 0 ){
-            System.out.println("as datas sao iguais");
+            System.out.println("As datas sao iguais");
         } else if ( dateA.compareTo(dateB) > 0 ) {
-            System.out.println("data maior que a parametro");
+            System.out.println("Data maior que a parametro");
         } else {
-            System.out.println("data menor que a parametro");   
+            System.out.println("Data menor que a parametro");   
         }
         
-        return 0;
-        //talvez  utilizar classe Data para comparação
-        //return 0;//iguais
-        //return 1;//data dessa classe maior que da outra
-        //return -1;//data da outra classe maior
     }
     
     private void formatarData() throws ParseException{
@@ -153,5 +147,8 @@ public class Data {
         return ano;
     }
     
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
     
 }
