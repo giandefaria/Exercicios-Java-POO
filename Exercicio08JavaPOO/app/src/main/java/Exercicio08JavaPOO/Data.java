@@ -42,10 +42,18 @@ public class Data {
                 this.verifica = false;
             }                        
         } else if ( mes == 2) {
-            if (dia > 0 && dia < 28) {
-                this.dia = dia;                
-            } else{
-                this.verifica = false;
+            if(isBissexto(ano)){
+                if (dia > 0 && dia < 29) {
+                    this.dia = dia;                
+                } else{
+                    this.verifica = false;
+                }
+            } else {
+                if (dia > 0 && dia < 28) {
+                    this.dia = dia;                
+                } else{
+                    this.verifica = false;
+                }          
             }           
         } else {
             if (dia > 0 && dia <= 30) {
