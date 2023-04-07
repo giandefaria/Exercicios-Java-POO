@@ -70,7 +70,13 @@ public class Data {
         //return -1;//data da outra classe maior
     }
     
-    
+    public boolean isBissexto(int ano){
+        if(ano % 4 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public int getDia() {
         return dia;
