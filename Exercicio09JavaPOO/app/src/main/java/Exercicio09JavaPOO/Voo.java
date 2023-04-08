@@ -53,7 +53,7 @@ public class Voo {
         return this.maximoPassageiros - this.vagasOcupadas;
     }
     
-    public void proximaPoltronaLivre(){
+    public int proximaPoltronaLivre(){
         String poltronaVaga = "nao";
         int poltrona = 1;
         
@@ -65,7 +65,11 @@ public class Voo {
             }
         }
         
-        System.out.println("Proxima poltrona livre: " + poltrona);
+        return poltrona;
+    }
+
+    public int getNumeroVoo() {
+        return numeroVoo;
     }
     
 }
