@@ -20,8 +20,10 @@ public class App {
         
         Voo voo = new Voo(10, 27, 11, 1994);
         System.out.println("Status da poltrona: " + voo.verificaPoltrona(1));
+        voo.ocupaPoltrona(1);
+        System.out.println("Status da poltrona: " + voo.verificaPoltrona(1));
         
-        System.out.println("Numero do voo: " + voo.)
+        System.out.println("Numero do voo: " + voo.getNumeroVoo());
         System.out.println("Poltronas vagas: " + voo.poltronasVagas());
         System.out.println("Proxima poltrona livre: " + voo.proximaPoltronaLivre());
     }
