@@ -18,6 +18,10 @@ public class Voo {
         this.numeroVoo = numeroVoo;
         Data dataVoo = new Data(diaVoo, mesVoo, anoVoo);
         
+        criaVetorComPoltronasLivres();
+    }
+
+    private void criaVetorComPoltronasLivres() {
         for (int i = 1; i <= this.maximoPassageiros; i++) {
             this.poltrona[i] = "livre";
         }
