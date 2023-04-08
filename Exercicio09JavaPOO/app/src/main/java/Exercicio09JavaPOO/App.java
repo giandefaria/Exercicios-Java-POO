@@ -14,14 +14,18 @@ f. GetVoo: retorna o número do vôo
  */
 package Exercicio09JavaPOO;
 
+import java.text.ParseException;
+
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         
-        Voo voo = new Voo(10, 27, 11, 1994);
+        Voo voo = new Voo(10, 30, 12, 2023);
+        System.out.println("Data do voo: " + voo.getDataVoo());
         System.out.println("Status da poltrona: " + voo.verificaPoltrona(1));
         voo.ocupaPoltrona(1);
         System.out.println("Status da poltrona: " + voo.verificaPoltrona(1));
+        
         
         System.out.println("Numero do voo: " + voo.getNumeroVoo());
         System.out.println("Poltronas vagas: " + voo.poltronasVagas());

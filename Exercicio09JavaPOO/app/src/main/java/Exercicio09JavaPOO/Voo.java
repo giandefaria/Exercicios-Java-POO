@@ -4,6 +4,9 @@
  */
 package Exercicio09JavaPOO;
 
+import java.text.ParseException;
+import java.util.Date;
+
 /**
  *
  * @author User
@@ -13,10 +16,11 @@ public class Voo {
     private int numeroVoo;
     private int vagasOcupadas = 0;
     private String poltrona[] = new String[(maximoPassageiros + 1)]; //vetor com numero de posições igual máximo passageiros
+    Data dataVoo;
     
     public Voo(int numeroVoo, int diaVoo, int mesVoo, int anoVoo) {
         this.numeroVoo = numeroVoo;
-        Data dataVoo = new Data(diaVoo, mesVoo, anoVoo);
+        dataVoo = new Data(diaVoo, mesVoo, anoVoo);
         
         criaVetorComPoltronasLivres();
     }
@@ -71,5 +75,9 @@ public class Voo {
     public int getNumeroVoo() {
         return numeroVoo;
     }
-    
+
+    public Date getDataVoo() throws ParseException {
+        return dataVoo.formatarData();
+    }
+       
 }

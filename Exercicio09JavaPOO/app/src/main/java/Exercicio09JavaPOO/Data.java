@@ -110,12 +110,12 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
         
     }
     
-    private void formatarData() throws ParseException{
+    public Date formatarData() throws ParseException{
          
         String converte = this.dia + "/" + this.mes + "/" + this.ano;
         SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date date = originalFormat.parse(converte);
-        System.out.println(date);
+        return date;
                   
     }
     
