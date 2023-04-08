@@ -53,4 +53,19 @@ public class Voo {
         return this.maximoPassageiros - this.vagasOcupadas;
     }
     
+    public void proximaPoltronaLivre(){
+        String poltronaVaga = "nao";
+        int poltrona = 1;
+        
+        while(poltronaVaga == "nao"){
+            if(this.poltrona[poltrona] == "livre"){
+                poltronaVaga = "sim";
+            } else{
+                poltrona++;
+            }
+        }
+        
+        System.out.println("Proxima poltrona livre: " + poltrona);
+    }
+    
 }
