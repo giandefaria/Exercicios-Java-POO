@@ -27,7 +27,7 @@ public class Voo {
         }
     }
 
-    public String getPoltrona(int posicaoPoltrona) {
+    public String verificaPoltrona(int posicaoPoltrona) {
         return poltrona[posicaoPoltrona];
     }
     
