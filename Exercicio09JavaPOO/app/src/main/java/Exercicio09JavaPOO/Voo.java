@@ -12,7 +12,7 @@ public class Voo {
     private int maximoPassageiros = 100;
     private int numeroVoo;
     private int vagasOcupadas;
-    private String poltrona[] = new String[maximoPassageiros]; //vetor com numero de posições igual máximo passageiros
+    private String poltrona[] = new String[(maximoPassageiros + 1)]; //vetor com numero de posições igual máximo passageiros
     
     public Voo(int numeroVoo, int diaVoo, int mesVoo, int anoVoo) {
         this.numeroVoo = numeroVoo;
@@ -28,7 +28,11 @@ public class Voo {
     }
 
     public String verificaPoltrona(int posicaoPoltrona) {
-        return poltrona[posicaoPoltrona];
+        if(posicaoPoltrona > 0 && posicaoPoltrona < this.poltrona.length){
+            return poltrona[posicaoPoltrona];
+        } else {
+            return "Poltrona nao existente";
+        }
     }
     
     public void ocupaPoltrona(int posicaoPoltrona){
