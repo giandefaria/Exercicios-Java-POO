@@ -49,4 +49,8 @@ public class Voo {
         }
     }
     
+    public int poltronasVagas(){
+        return this.maximoPassageiros - this.vagasOcupadas;
+    }
+    
 }
