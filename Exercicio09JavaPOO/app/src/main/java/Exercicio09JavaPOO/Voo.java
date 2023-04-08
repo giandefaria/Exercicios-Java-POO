@@ -12,6 +12,7 @@ public class Voo {
     private int maximoPassageiros = 100;
     private int numeroVoo;
     private int vagasOcupadas;
+    private int poltrona[] = new int[maximoPassageiros];
     
     public Voo(int numeroVoo, int diaVoo, int mesVoo, int anoVoo) {
         this.numeroVoo = numeroVoo;
