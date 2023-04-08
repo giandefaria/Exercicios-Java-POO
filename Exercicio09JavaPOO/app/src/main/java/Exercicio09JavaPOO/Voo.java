@@ -11,7 +11,7 @@ package Exercicio09JavaPOO;
 public class Voo {
     private int maximoPassageiros = 100;
     private int numeroVoo;
-    private int vagasOcupadas;
+    private int vagasOcupadas = 0;
     private String poltrona[] = new String[(maximoPassageiros + 1)]; //vetor com numero de posições igual máximo passageiros
     
     public Voo(int numeroVoo, int diaVoo, int mesVoo, int anoVoo) {
@@ -39,6 +39,7 @@ public class Voo {
         if(posicaoPoltrona > 0 && posicaoPoltrona < this.poltrona.length){
             if(verificaPoltrona(posicaoPoltrona) == "livre"){
                 this.poltrona[posicaoPoltrona] = "ocupada";
+                this.vagasOcupadas++;
                 System.out.println("Operacao bem sucedida! Poltrona " + posicaoPoltrona + " reservada");
             } else {
                 System.out.println("Poltrona ocupada! Escolha outra poltrona");
