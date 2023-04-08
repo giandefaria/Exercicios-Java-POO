@@ -111,7 +111,7 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
     }
     
     public Date formatarData() throws ParseException{
-         
+        //formata para tipo Date 
         String converte = this.dia + "/" + this.mes + "/" + this.ano;
         SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date date = originalFormat.parse(converte);
