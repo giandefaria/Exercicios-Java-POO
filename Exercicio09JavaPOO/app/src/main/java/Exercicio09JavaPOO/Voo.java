@@ -36,11 +36,15 @@ public class Voo {
     }
     
     public void ocupaPoltrona(int posicaoPoltrona){
-        if(verificaPoltrona(posicaoPoltrona) == "livre"){
-            this.poltrona[posicaoPoltrona] = "ocupada";
-            System.out.println("Operacao bem sucedida! Poltrona " + posicaoPoltrona + " reservada");
-        } else {
-            System.out.println("Poltrona ocupada! Escolha outra poltrona");
+        if(posicaoPoltrona > 0 && posicaoPoltrona < this.poltrona.length){
+            if(verificaPoltrona(posicaoPoltrona) == "livre"){
+                this.poltrona[posicaoPoltrona] = "ocupada";
+                System.out.println("Operacao bem sucedida! Poltrona " + posicaoPoltrona + " reservada");
+            } else {
+                System.out.println("Poltrona ocupada! Escolha outra poltrona");
+            }
+        } else{
+            System.out.println("Poltrona nao existente");
         }
     }
     
