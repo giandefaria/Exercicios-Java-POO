@@ -18,5 +18,8 @@ public class App {
 
     public static void main(String[] args) {
         
+        Voo voo = new Voo(10, 27, 11, 1994);
+        System.out.println("array is " + voo.getPoltrona());
+        
     }
 }

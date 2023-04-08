@@ -22,9 +22,14 @@ public class Voo {
     }
 
     private void criaVetorComPoltronasLivres() {
-        for (int i = 1; i <= this.maximoPassageiros; i++) {
+        for (int i = 1; i < poltrona.length; i++) {
             this.poltrona[i] = "livre";
         }
     }
+
+    public String getPoltrona(int posicaoPoltrona) {
+        return poltrona[posicaoPoltrona];
+    }
+    
     
 }
