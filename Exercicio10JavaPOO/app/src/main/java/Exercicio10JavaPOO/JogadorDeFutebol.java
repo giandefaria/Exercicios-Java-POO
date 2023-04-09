@@ -4,8 +4,7 @@
  */
 package Exercicio10JavaPOO;
 
-import java.text.ParseException;
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -27,8 +26,8 @@ public class JogadorDeFutebol {
         
     }
     
-    public void idade() throws ParseException{
-        Date dataNascimento = this.dataDeNascimento.formatarDataParaDate(); //recebo a data em date
+    public void idade(){
+        LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
         
     }
 
