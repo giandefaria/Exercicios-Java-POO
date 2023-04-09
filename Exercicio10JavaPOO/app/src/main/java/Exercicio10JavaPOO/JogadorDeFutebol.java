@@ -28,15 +28,22 @@ public class JogadorDeFutebol {
         
     }
     
-    public void idade(){
+    public long idade(){
         LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
         LocalDate dataAtual = LocalDate.now(ZoneId.of("America/Sao_Paulo")); //uso horario de sao paulo como base
-        System.out.println(dataNascimento);
-        System.out.println(dataAtual);
+        //System.out.println(dataNascimento);
+        //System.out.println(dataAtual);
         
         long diferencaAnosEntreDatas = ChronoUnit.YEARS.between(dataNascimento, dataAtual);
-        System.out.println("Idade: " + diferencaAnosEntreDatas);
+        //System.out.println("Idade: " + diferencaAnosEntreDatas);
+        return diferencaAnosEntreDatas;
         
+    }
+    
+    public void tempoParaAposentadoria(){
+        System.out.println("Se defensor, faltam " + (40 - idade()) + " anos para se aposentar" );
+        System.out.println("Se meio-campo, faltam " + (38 - idade()) + " anos para se aposentar" );
+        System.out.println("Se atacante, faltam " + (35 - idade()) + " anos para se aposentar" );
     }
 
     public String getNome() {
