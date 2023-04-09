@@ -17,11 +17,53 @@ public class JogadorDeFutebol {
     
     public JogadorDeFutebol(String nome, int diaNascimento, int mesNascimento, int anoNascimento, String nacionalidade, float altura, float peso){
         this.nome = nome;
-        this.dataDeNascimento = new Data(diaNascimento, mesNascimento, anoNascimento);
+        setDataDeNascimento(diaNascimento, mesNascimento, anoNascimento);
         this.nacionalidade = nacionalidade;
         this.altura = altura;
         this.peso = peso;
         
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Data getDataDeNascimento() {
+        return dataDeNascimento;
+    }
+
+    public void setDataDeNascimento(int diaNascimento, int mesNascimento, int anoNascimento) {
+        this.dataDeNascimento = new Data(diaNascimento, mesNascimento, anoNascimento);
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+    
+    
     
 }
