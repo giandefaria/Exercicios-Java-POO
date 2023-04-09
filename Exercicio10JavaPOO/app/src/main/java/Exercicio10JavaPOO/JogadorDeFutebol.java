@@ -4,6 +4,9 @@
  */
 package Exercicio10JavaPOO;
 
+import java.text.ParseException;
+import java.util.Date;
+
 /**
  *
  * @author User
@@ -21,6 +24,11 @@ public class JogadorDeFutebol {
         this.nacionalidade = nacionalidade;
         this.altura = altura;
         this.peso = peso;
+        
+    }
+    
+    public void idade() throws ParseException{
+        Date dataNascimento = this.dataDeNascimento.formatarDataParaDate(); //recebo a data em date
         
     }
 
