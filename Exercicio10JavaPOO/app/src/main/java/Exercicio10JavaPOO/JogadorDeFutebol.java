@@ -15,10 +15,10 @@ public class JogadorDeFutebol {
     private String nome;
     private Data dataDeNascimento;
     private String nacionalidade;
-    private float altura;
-    private float peso;
+    private double altura;
+    private double peso;
     
-    public JogadorDeFutebol(String nome, int diaNascimento, int mesNascimento, int anoNascimento, String nacionalidade, float altura, float peso){
+    public JogadorDeFutebol(String nome, int diaNascimento, int mesNascimento, int anoNascimento, String nacionalidade, double altura, double peso){
         this.nome = nome;
         setDataDeNascimento(diaNascimento, mesNascimento, anoNascimento);
         this.nacionalidade = nacionalidade;
@@ -29,7 +29,7 @@ public class JogadorDeFutebol {
     
     public void idade(){
         LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
-        LocalDate dataAtual = LocalDate.now(ZoneId.of("BET"));
+        LocalDate dataAtual = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
         System.out.println(dataNascimento);
         System.out.println(dataAtual);
         
@@ -59,7 +59,7 @@ public class JogadorDeFutebol {
         this.nacionalidade = nacionalidade;
     }
 
-    public float getAltura() {
+    public double getAltura() {
         return altura;
     }
 
@@ -67,7 +67,7 @@ public class JogadorDeFutebol {
         this.altura = altura;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
