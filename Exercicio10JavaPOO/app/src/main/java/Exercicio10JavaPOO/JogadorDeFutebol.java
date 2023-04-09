@@ -9,5 +9,9 @@ package Exercicio10JavaPOO;
  * @author User
  */
 public class JogadorDeFutebol {
-    
+    private String nome;
+    private String dataDeNascimento;
+    private String nacionalidade;
+    private float altura;
+    private float peso;
 }
