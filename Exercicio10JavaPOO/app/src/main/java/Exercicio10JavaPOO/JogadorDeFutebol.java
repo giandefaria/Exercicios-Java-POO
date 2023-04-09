@@ -6,6 +6,7 @@ package Exercicio10JavaPOO;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 
 /**
  *
@@ -29,9 +30,12 @@ public class JogadorDeFutebol {
     
     public void idade(){
         LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
-        LocalDate dataAtual = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
+        LocalDate dataAtual = LocalDate.now(ZoneId.of("America/Sao_Paulo")); //uso horario de sao paulo como base
         System.out.println(dataNascimento);
         System.out.println(dataAtual);
+        
+        long diferencaAnosEntreDatas = ChronoUnit.YEARS.between(dataNascimento, dataAtual);
+        System.out.println("Idade: " + diferencaAnosEntreDatas);
         
     }
 
