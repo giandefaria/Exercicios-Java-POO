@@ -19,7 +19,7 @@ public class App {
         
         JogadorDeFutebol jogadorDeFutebol = new JogadorDeFutebol("Suarez", 24, 01, 1987, "Uruguai", 1.82, 83);
         
-        System.out.println("Idade: " + jogadorDeFutebol.idade());
+        jogadorDeFutebol.informacoesDoJogador();
         jogadorDeFutebol.tempoParaAposentadoria();
     }
 }

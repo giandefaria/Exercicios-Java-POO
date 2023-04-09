@@ -15,9 +15,14 @@ import java.time.temporal.ChronoUnit;
 public class JogadorDeFutebol {
     private String nome;
     private Data dataDeNascimento;
+    private LocalDate dataDeNascimentoFormatada;
     private String nacionalidade;
     private double altura;
     private double peso;
+    
+    public JogadorDeFutebol(){
+    
+    }
     
     public JogadorDeFutebol(String nome, int diaNascimento, int mesNascimento, int anoNascimento, String nacionalidade, double altura, double peso){
         this.nome = nome;
@@ -28,11 +33,22 @@ public class JogadorDeFutebol {
         
     }
     
+    public void informacoesDoJogador(){
+        System.out.println( "Nome: " + this.nome + "\n" +
+                            "Idade: " + idade() + "\n" +
+                            "Data de Nascimento: " + this.dataDeNascimentoFormatada + "\n" +
+                            "Nacionalidade: " + this.nacionalidade + "\n" +
+                            "Altura: " + this.altura + "\n" +
+                            "Peso: " + this.peso + "\n");
+    }
+    
+    
     public long idade(){
         LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
         LocalDate dataAtual = LocalDate.now(ZoneId.of("America/Sao_Paulo")); //uso horario de sao paulo como base
         //System.out.println(dataNascimento);
         //System.out.println(dataAtual);
+        dataDeNascimentoFormatada = dataNascimento;
         
         long diferencaAnosEntreDatas = ChronoUnit.YEARS.between(dataNascimento, dataAtual);
         //System.out.println("Idade: " + diferencaAnosEntreDatas);
