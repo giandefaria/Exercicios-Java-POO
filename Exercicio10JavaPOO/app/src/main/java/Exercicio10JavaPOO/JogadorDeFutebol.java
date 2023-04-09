@@ -5,6 +5,7 @@
 package Exercicio10JavaPOO;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
 
 /**
  *
@@ -28,6 +29,9 @@ public class JogadorDeFutebol {
     
     public void idade(){
         LocalDate dataNascimento = LocalDate.of(dataDeNascimento.getAno(), dataDeNascimento.getMes(), dataDeNascimento.getDia());
+        LocalDate dataAtual = LocalDate.now(ZoneId.of("BET"));
+        System.out.println(dataNascimento);
+        System.out.println(dataAtual);
         
     }
 
