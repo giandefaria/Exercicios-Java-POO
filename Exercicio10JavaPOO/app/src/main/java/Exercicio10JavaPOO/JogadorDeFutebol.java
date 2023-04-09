@@ -14,4 +14,14 @@ public class JogadorDeFutebol {
     private String nacionalidade;
     private float altura;
     private float peso;
+    
+    public JogadorDeFutebol(String nome, int diaNascimento, int mesNascimento, int anoNascimento, String nacionalidade, float altura, float peso){
+        this.nome = nome;
+        this.dataDeNascimento = new Data(diaNascimento, mesNascimento, anoNascimento);
+        this.nacionalidade = nacionalidade;
+        this.altura = altura;
+        this.peso = peso;
+        
+    }
+    
 }

@@ -110,13 +110,18 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
         
     }
     
-    public Date formatarData() throws ParseException{
+    public Date formatarDataParaDate() throws ParseException{
         //formata para tipo Date 
         String converte = this.dia + "/" + this.mes + "/" + this.ano;
         SimpleDateFormat originalFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date date = originalFormat.parse(converte);
         return date;
                   
+    }
+    
+    public String getDataFormatada(){
+        String dataFormatadaEmDiaMesAno = this.dia + "/" + this.mes + "/" + this.ano;
+        return dataFormatadaEmDiaMesAno;    
     }
     
     public boolean isBissexto(int ano){
