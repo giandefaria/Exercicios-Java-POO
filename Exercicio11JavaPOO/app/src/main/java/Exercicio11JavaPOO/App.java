@@ -11,6 +11,10 @@ public class App {
 
     public static void main(String[] args) {
         
+        Ingresso ingresso = new Ingresso();
+        ingresso.setValorIngresso(20.50);
+        System.out.println("O valor do ingresso comum e: R$ " + ingresso.getValorIngresso());
+        
         IngressoVip ingressoVip = new IngressoVip();
         
     }
