@@ -17,7 +17,11 @@ public class IngressoVip extends Ingresso {
     }
     
     public double valorIngressoVip(){
-        return getValorIngresso() * this.valorAdicional;
+        return getValorIngresso() + (getValorIngresso() * this.valorAdicional);
+    }
+
+    public void setValorAdicional(double valorAdicional) {
+        this.valorAdicional = valorAdicional;
     }
     
   

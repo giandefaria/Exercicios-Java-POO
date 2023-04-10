@@ -16,6 +16,10 @@ public class App {
         System.out.println("O valor do ingresso comum e: R$ " + ingresso.getValorIngresso());
         
         IngressoVip ingressoVip = new IngressoVip();
+        ingressoVip.setValorIngresso(20.50);
+        ingressoVip.setValorAdicional(0.50);
+        System.out.println("Valor do ingresso vip e: R$ " + ingressoVip.valorIngressoVip());
+        
         
     }
 }
