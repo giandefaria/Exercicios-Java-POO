@@ -22,8 +22,12 @@ public class Agenda {
        
     public void armazenarPessoa(String nome, int idade, float altura){
         
-        pessoa[indiceLista].adicionaPessoa(nome, idade, altura);
-    
+        if(indiceLista <= 10){
+            pessoa[indiceLista].adicionaPessoa(nome, idade, altura);
+            indiceLista++;
+        } else {
+            System.out.println("Não há mais espaço no vetor");
+        }
     }
     
 }
