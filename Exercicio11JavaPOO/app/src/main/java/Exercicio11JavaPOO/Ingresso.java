@@ -20,4 +20,14 @@ public class Ingresso {
         this.valorIngresso = valorIngresso;
     }
     
+    
+
+    public double getValorIngresso() {
+        return valorIngresso;
+    }
+
+    public void setValorIngresso(double valorIngresso) {
+        this.valorIngresso = valorIngresso;
+    } 
+    
 }
