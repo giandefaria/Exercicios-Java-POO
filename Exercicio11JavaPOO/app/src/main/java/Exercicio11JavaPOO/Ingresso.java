@@ -12,4 +12,12 @@ public class Ingresso {
     
     private double valorIngresso;
     
+    public Ingresso(){
+    
+    }
+    
+    public Ingresso(double valorIngresso){
+        this.valorIngresso = valorIngresso;
+    }
+    
 }
