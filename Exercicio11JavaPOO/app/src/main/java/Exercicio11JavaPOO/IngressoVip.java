@@ -12,4 +12,5 @@ public class IngressoVip extends Ingresso {
     
     private double valorAdicional;
     
+    
 }
