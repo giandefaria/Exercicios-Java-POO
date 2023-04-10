@@ -14,6 +14,10 @@ public class Agenda {
     private int idade[] = new int[10];
     private double altura[] = new double[10];
     
+    public Agenda(){
+    
+    }
+    
     
     
 }
