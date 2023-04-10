@@ -20,7 +20,7 @@ public class Agenda {
     
     }
        
-    public void armazenarPessoa(String nome, int idade, float altura){
+    public void armazenarPessoa(String nome, int idade, double altura){
         
         if(indiceLista <= 10){
             pessoa[indiceLista].adicionaPessoa(nome, idade, altura);
