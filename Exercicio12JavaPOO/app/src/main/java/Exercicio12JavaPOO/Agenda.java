@@ -30,4 +30,10 @@ public class Agenda {
         }
     }
     
+    public void imprimirPessoa(int index){
+        System.out.println("Nome: " + pessoa[index].getNome());
+        System.out.println("Idade: " + pessoa[index].getIdade());
+        System.out.println("Altura: " + pessoa[index].getAltura());
+    }
+    
 }
