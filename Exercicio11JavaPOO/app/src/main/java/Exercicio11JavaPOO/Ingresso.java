@@ -20,7 +20,6 @@ public class Ingresso {
         this.valorIngresso = valorIngresso;
     }
     
-    
 
     public double getValorIngresso() {
         return valorIngresso;
