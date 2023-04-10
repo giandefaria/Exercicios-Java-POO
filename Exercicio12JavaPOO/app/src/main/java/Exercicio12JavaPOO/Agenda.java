@@ -19,8 +19,11 @@ public class Agenda {
     public Agenda(){
     
     }
+       
+    public void armazenarPessoa(String nome, int idade, float altura){
+        
+        pessoa[indiceLista].adicionaPessoa(nome, idade, altura);
     
-    
-    
+    }
     
 }
