@@ -10,4 +10,10 @@ package Exercicio12JavaPOO;
  */
 public class Agenda {
     
+    private String nome[] = new String[10];
+    private int idade[] = new int[10];
+    private double altura[] = new double[10];
+    
+    
+    
 }
