@@ -10,4 +10,6 @@ package Exercicio11JavaPOO;
  */
 public class Ingresso {
     
+    private double valorIngresso;
+    
 }
