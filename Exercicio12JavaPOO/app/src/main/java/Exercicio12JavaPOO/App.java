@@ -22,5 +22,7 @@ public class App {
         agenda.removerPessoa("Pian");
         agenda.imprimirPessoa(1);
         System.out.println("Indice da pessoa no vetor: " + agenda.buscarPessoa("Gian"));
+        
+        agenda.imprimirAgenda();
     }
 }
