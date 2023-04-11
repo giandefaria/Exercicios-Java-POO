@@ -10,10 +10,7 @@ package Exercicio12JavaPOO;
  */
 public class Agenda {
     
-    /*private String nome[] = new String[10];
-    private int idade[] = new int[10];
-    private double altura[] = new double[10];*/
-    private Pessoa pessoa[] = new Pessoa[10];
+    private Pessoa pessoa[] = new Pessoa[10]; //crio  um vetor do tipo Pessoa, com 10 indices no máximo
     private int indiceLista = 1;
     
     public Agenda(){
@@ -34,7 +31,7 @@ public class Agenda {
     public void imprimirPessoa(int index){
         System.out.println("Nome: " + pessoa[index].getNome());
         System.out.println("Idade: " + pessoa[index].getIdade());
-        System.out.println("Altura: " + pessoa[index].getAltura());
+        System.out.println("Altura: " + pessoa[index].getAltura() + "\n");
         
     }
     

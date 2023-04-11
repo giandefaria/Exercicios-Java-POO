@@ -14,15 +14,18 @@ public class App {
 
     public static void main(String[] args) {
         
-        Agenda agenda = new Agenda();
-        
+        Agenda agenda = new Agenda();       
         agenda.armazenarPessoa("Gian", 28, 1.71);
-        agenda.imprimirPessoa(1);
-        
-        agenda.removerPessoa("Pian");
-        agenda.imprimirPessoa(1);
-        System.out.println("Indice da pessoa no vetor: " + agenda.buscarPessoa("Gian"));
+        agenda.armazenarPessoa("Joao", 22, 1.79);
+        agenda.armazenarPessoa("Carlos", 35, 1.68);
         
         agenda.imprimirAgenda();
+        
+        agenda.removerPessoa("Carlos");
+ 
+        System.out.println("Indice da pessoa no vetor: " + agenda.buscarPessoa("Gian") + "\n");
+        
+        agenda.imprimirAgenda();
+        agenda.imprimirPessoa(1);
     }
 }
