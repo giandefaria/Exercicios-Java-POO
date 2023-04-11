@@ -17,5 +17,6 @@ public class App {
         Agenda agenda = new Agenda();
         
         agenda.armazenarPessoa("Gian", 28, 1.71);
+        agenda.imprimirPessoa(1);
     }
 }
