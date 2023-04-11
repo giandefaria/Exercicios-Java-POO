@@ -19,7 +19,8 @@ public class App {
         agenda.armazenarPessoa("Gian", 28, 1.71);
         agenda.imprimirPessoa(1);
         
-        agenda.removerPessoa("Gian");
+        agenda.removerPessoa("Pian");
         agenda.imprimirPessoa(1);
+        System.out.println("Indice da pessoa no vetor: " + agenda.buscarPessoa("Gian"));
     }
 }

@@ -39,21 +39,30 @@ public class Agenda {
     }
     
     public void removerPessoa(String nome){
+        int indice = buscarPessoa(nome);
+        if(indice != 0){
+            pessoa[indice] = new Pessoa(); //objeto vazio
+        } else {
+            System.out.println("Vetor nao encontrado");        
+        }
+    }
+
+    public int buscarPessoa(String nome) {
         int indiceNoVetor = 0;
         
         for (int i = 1; i < pessoa.length; i++) {
             try{
                 if(pessoa[i].getNome() == nome){
                     indiceNoVetor = i;
-                    pessoa[i] = new Pessoa(); //objeto vazio
-                    break;
                 } 
             } catch(Exception e){
-                System.out.println("Indice do vetor nao existe");
+                //System.out.println("Indice do vetor nao existe");
             }
         }
         if(indiceNoVetor == 0){
-            System.out.println("Vetor nao encontrado");
+            return 0;
+        } else {
+            return indiceNoVetor;
         }
     }
     
