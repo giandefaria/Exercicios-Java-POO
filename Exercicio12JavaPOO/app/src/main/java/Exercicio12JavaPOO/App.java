@@ -18,5 +18,8 @@ public class App {
         
         agenda.armazenarPessoa("Gian", 28, 1.71);
         agenda.imprimirPessoa(1);
+        
+        agenda.removerPessoa("Gian");
+        agenda.imprimirPessoa(1);
     }
 }
