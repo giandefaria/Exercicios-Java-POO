@@ -66,4 +66,14 @@ public class Agenda {
         }
     }
     
+    public void imprimirAgenda(){
+        for (int i = 1; i < pessoa.length; i++) {
+            try{
+                imprimirPessoa(i);
+            } catch(Exception e){
+                //System.out.println("Indice do vetor nao existe");
+            }
+        }  
+    }
+    
 }
