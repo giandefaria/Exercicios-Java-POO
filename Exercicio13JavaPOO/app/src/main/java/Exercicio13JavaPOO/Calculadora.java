@@ -8,6 +8,6 @@ package Exercicio13JavaPOO;
  *
  * @author User
  */
-public class Calculadora {
+public class Calculadora extends CalculadoraCientifica {
     
 }

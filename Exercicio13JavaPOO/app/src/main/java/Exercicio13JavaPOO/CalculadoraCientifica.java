@@ -10,4 +10,12 @@ package Exercicio13JavaPOO;
  */
 public class CalculadoraCientifica {
     
+    public void raizQuadrada(){
+    
+    }
+    
+    public void potencia(){
+    
+    }
+    
 }
