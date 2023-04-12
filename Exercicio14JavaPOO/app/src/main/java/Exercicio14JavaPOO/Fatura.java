@@ -53,7 +53,11 @@ public class Fatura {
     }
 
     public void setPrecoDoItem(double precoDoItem) {
-        this.precoDoItem = precoDoItem;
+        if(precoDoItem < 0){
+            this.precoDoItem = 0;
+        } else {
+            this.precoDoItem = precoDoItem;
+        }
     }
     
     
