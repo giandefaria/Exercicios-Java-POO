@@ -14,8 +14,8 @@ public class CalculadoraCientifica {
     
    
     
-    public void raizQuadrada(){
-    
+    public double raizQuadrada(double numero){
+        return Math.sqrt(numero);
     }
     
     public void potencia(){
