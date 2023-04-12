@@ -23,6 +23,15 @@ public class Fatura {
         setQuantidadeCompradaItem(quantidadeCompradaItem);        
         setPrecoDoItem(precoDoItem);
     }
+    
+    public double getTotalFatura(){
+        double valorTotalCompra = this.precoDoItem * this.quantidadeCompradaItem;
+        if(valorTotalCompra < 0){
+            return 0;
+        } else {
+            return valorTotalCompra;
+        }
+    }
 
     public int getNumeroItem() {
         return numeroItem;

@@ -17,5 +17,11 @@ public class App {
 
     public static void main(String[] args) {
         
+        Fatura fatura = new Fatura(50, "Presunto", 2, 14.50);
+        
+        System.out.println("Número do item: " + fatura.getNumeroItem());
+        System.out.println("Nome do item: " + fatura.getDescricaoItem());
+        System.out.println("Valor total da fatura: R$ " + fatura.getTotalFatura());
+        
     }
 }
