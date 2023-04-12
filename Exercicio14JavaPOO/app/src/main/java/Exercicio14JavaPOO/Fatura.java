@@ -14,4 +14,16 @@ public class Fatura {
     private int quantidadeCompradaItem;
     private double precoDoItem;
     
+    public Fatura(){
+    }
+
+    public Fatura(int numeroItem, String descricaoItem, int quantidadeCompradaItem, double precoDoItem) {
+        this.numeroItem = numeroItem;
+        this.descricaoItem = descricaoItem;
+        this.quantidadeCompradaItem = quantidadeCompradaItem;
+        this.precoDoItem = precoDoItem;
+    }
+    
+    
+    
 }
