@@ -21,7 +21,7 @@ public class Fatura {
         this.numeroItem = numeroItem;
         this.descricaoItem = descricaoItem;
         this.quantidadeCompradaItem = quantidadeCompradaItem;
-        this.precoDoItem = precoDoItem;
+        setPrecoDoItem(precoDoItem);
     }
 
     public int getNumeroItem() {
@@ -45,7 +45,11 @@ public class Fatura {
     }
 
     public void setQuantidadeCompradaItem(int quantidadeCompradaItem) {
-        this.quantidadeCompradaItem = quantidadeCompradaItem;
+        if(quantidadeCompradaItem < 0){
+            this.quantidadeCompradaItem = 0;
+        } else {
+            this.quantidadeCompradaItem = quantidadeCompradaItem;
+        }
     }
 
     public double getPrecoDoItem() {
