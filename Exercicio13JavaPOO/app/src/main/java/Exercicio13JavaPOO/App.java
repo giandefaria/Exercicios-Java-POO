@@ -8,8 +8,12 @@ package Exercicio13JavaPOO;
 
 public class App {
 
-
     public static void main(String[] args) {
+        
+        Calculadora calculadora = new Calculadora();
+        
+        System.out.println("A raiz quadrada de 4 é : " + calculadora.raizQuadrada(4));
+        System.out.println("Dois elevado a quinta potencia é : " + calculadora.potencia(2, 5));
         
     }
 }

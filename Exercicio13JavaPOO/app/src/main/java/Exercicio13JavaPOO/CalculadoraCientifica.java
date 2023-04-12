@@ -18,8 +18,8 @@ public class CalculadoraCientifica {
         return Math.sqrt(numero);
     }
     
-    public void potencia(){
-    
+    public double potencia(double numero, double potenciaQueSeraElevado){
+        return Math.pow(numero, potenciaQueSeraElevado);
     }
     
 }
