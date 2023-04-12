@@ -20,7 +20,7 @@ public class Fatura {
     public Fatura(int numeroItem, String descricaoItem, int quantidadeCompradaItem, double precoDoItem) {
         this.numeroItem = numeroItem;
         this.descricaoItem = descricaoItem;
-        this.quantidadeCompradaItem = quantidadeCompradaItem;
+        setQuantidadeCompradaItem(quantidadeCompradaItem);        
         setPrecoDoItem(precoDoItem);
     }
 
