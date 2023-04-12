@@ -9,5 +9,9 @@ package Exercicio14JavaPOO;
  * @author User
  */
 public class Fatura {
+    private int numeroItem;
+    private String descricaoItem;
+    private int quantidadeCompradaItem;
+    private double precoDoItem;
     
 }
