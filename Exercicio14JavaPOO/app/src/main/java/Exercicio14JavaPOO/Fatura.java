@@ -23,6 +23,38 @@ public class Fatura {
         this.quantidadeCompradaItem = quantidadeCompradaItem;
         this.precoDoItem = precoDoItem;
     }
+
+    public int getNumeroItem() {
+        return numeroItem;
+    }
+
+    public void setNumeroItem(int numeroItem) {
+        this.numeroItem = numeroItem;
+    }
+
+    public String getDescricaoItem() {
+        return descricaoItem;
+    }
+
+    public void setDescricaoItem(String descricaoItem) {
+        this.descricaoItem = descricaoItem;
+    }
+
+    public int getQuantidadeCompradaItem() {
+        return quantidadeCompradaItem;
+    }
+
+    public void setQuantidadeCompradaItem(int quantidadeCompradaItem) {
+        this.quantidadeCompradaItem = quantidadeCompradaItem;
+    }
+
+    public double getPrecoDoItem() {
+        return precoDoItem;
+    }
+
+    public void setPrecoDoItem(double precoDoItem) {
+        this.precoDoItem = precoDoItem;
+    }
     
     
     
