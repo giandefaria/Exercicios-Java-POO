@@ -14,4 +14,16 @@ public class Calculadora extends CalculadoraCientifica {
         return numeroA + numeroB;
     }
     
+    public int subtracao(int numeroA, int numeroB){
+        return numeroA - numeroB;
+    }
+    
+    public double divisao(int numeroA, int numeroB){
+        return numeroA / numeroB;
+    }
+    
+    public double multiplicacao(int numeroA, int numeroB){
+        return numeroA * numeroB;
+    }
+    
 }
