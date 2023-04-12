@@ -10,4 +10,8 @@ package Exercicio13JavaPOO;
  */
 public class Calculadora extends CalculadoraCientifica {
     
+    public int soma(int numeroA, int numeroB){
+        return numeroA + numeroB;
+    }
+    
 }
