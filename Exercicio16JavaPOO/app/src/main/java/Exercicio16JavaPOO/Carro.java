@@ -11,6 +11,7 @@ package Exercicio16JavaPOO;
 public class Carro {
     
     private double capacidadeMaximaTanqueGasolina = 50;
+    private double quantidadeGasolinaTanque;
     private int quilometrosPorLitro = 15;
     
 }
