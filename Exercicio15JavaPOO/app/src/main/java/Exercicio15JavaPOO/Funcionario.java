@@ -17,13 +17,17 @@ public class Funcionario {
         this.nome = nome;
         this.sobreNome = sobreNome;
         this.salarioMensal = salarioMensal;
-    }
-    
-    
+    } 
 
     public void aumentoSalario(double porcentagemAumento){
         double aumento = porcentagemAumento / 100;
         this.salarioMensal = this.salarioMensal + (this.salarioMensal * aumento);
+    }
+    
+    public void imprimirDadosFuncionario(){
+        System.out.println("Nome: " + this.nome + " " + this.sobreNome);
+        System.out.println("Salario: R$ " + this.salarioMensal + "\n");
+
     }
     
     public String getNome() {
@@ -49,7 +53,6 @@ public class Funcionario {
     public void setSalarioMensal(double salarioMensal) {
         this.salarioMensal = salarioMensal;
     }
-    
     
     
 }

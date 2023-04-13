@@ -19,7 +19,8 @@ public class App {
         Funcionario funcionarioA = new Funcionario("José", "Pereira", 1530.50);
         Funcionario funcionarioB = new Funcionario("Carlos", "Oliveira", 2332.28);
         
-        
+        funcionarioA.imprimirDadosFuncionario();
+        funcionarioB.imprimirDadosFuncionario();
         
     }
 }
