@@ -13,6 +13,14 @@ public class Funcionario {
     private String sobreNome;
     private double salarioMensal;
 
+    public Funcionario(String nome, String sobreNome, double salarioMensal) {
+        this.nome = nome;
+        this.sobreNome = sobreNome;
+        this.salarioMensal = salarioMensal;
+    }
+    
+    
+
     public void aumentoSalario(double porcentagemAumento){
         double aumento = porcentagemAumento / 100;
         this.salarioMensal = this.salarioMensal + (this.salarioMensal * aumento);

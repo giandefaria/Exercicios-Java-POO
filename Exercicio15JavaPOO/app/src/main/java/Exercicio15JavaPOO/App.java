@@ -16,5 +16,10 @@ public class App {
 
     public static void main(String[] args) {
         
+        Funcionario funcionarioA = new Funcionario("José", "Pereira", 1530.50);
+        Funcionario funcionarioB = new Funcionario("Carlos", "Oliveira", 2332.28);
+        
+        
+        
     }
 }
