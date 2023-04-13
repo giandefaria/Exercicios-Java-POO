@@ -14,6 +14,11 @@ public class Carro {
     private double quantidadeGasolinaTanque;
     private int quilometrosPorLitro = 15;
 
+    public Carro(double quantidadeGasolinaTanque) {
+        adicionaGasolinaTanque(quantidadeGasolinaTanque);
+    }
+        
+
     public double getQuantidadeGasolinaTanque() {
         return quantidadeGasolinaTanque;
     }
