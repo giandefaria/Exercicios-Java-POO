@@ -9,5 +9,8 @@ package Exercicio15JavaPOO;
  * @author User
  */
 public class Funcionario {
+    private String nome;
+    private String sobreNome;
+    private double salarioMensal;
     
 }
