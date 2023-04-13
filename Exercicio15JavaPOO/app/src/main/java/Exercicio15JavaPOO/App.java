@@ -22,5 +22,8 @@ public class App {
         funcionarioA.imprimirDadosFuncionario();
         funcionarioB.imprimirDadosFuncionario();
         
+        funcionarioA.aumentoSalario(10);
+        funcionarioB.aumentoSalario(10);
+        
     }
 }
