@@ -17,7 +17,11 @@ public class Carro {
     public Carro(double quantidadeGasolinaTanque) {
         adicionaGasolinaTanque(quantidadeGasolinaTanque);
     }
-        
+     
+    public void distanciaPercorrida(double distanciaPercorrida){
+        System.out.println("Distancia percorrida: " + distanciaPercorrida);
+        System.out.println("Total de combustivel restante " + getQuantidadeGasolinaTanque());
+    }
 
     public double getQuantidadeGasolinaTanque() {
         return quantidadeGasolinaTanque;
