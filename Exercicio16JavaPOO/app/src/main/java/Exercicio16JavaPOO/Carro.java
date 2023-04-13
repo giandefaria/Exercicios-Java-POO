@@ -13,5 +13,15 @@ public class Carro {
     private double capacidadeMaximaTanqueGasolina = 50;
     private double quantidadeGasolinaTanque;
     private int quilometrosPorLitro = 15;
+
+    public double getQuantidadeGasolinaTanque() {
+        return quantidadeGasolinaTanque;
+    }
+
+    public void adicionaGasolinaTanque(double quantidadeGasolinaTanque) {
+        this.quantidadeGasolinaTanque = this.quantidadeGasolinaTanque + quantidadeGasolinaTanque;
+    }
+    
+    
     
 }
