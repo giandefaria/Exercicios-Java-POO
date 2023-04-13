@@ -31,7 +31,7 @@ public class Carro {
         double espacoGasolinaTanque = this.capacidadeMaximaTanqueGasolina - this.quantidadeGasolinaTanque;
         
         if(quantidadeGasolina <= espacoGasolinaTanque) {
-            this.quantidadeGasolinaTanque = this.quantidadeGasolinaTanque + quantidadeGasolinaTanque;
+            this.quantidadeGasolinaTanque = this.quantidadeGasolinaTanque + quantidadeGasolina;
             System.out.println("Carro abastecido com " + quantidadeGasolina + " litros de gasolina");
             System.out.println("Atual quantidade de gasolina no tanque: " + getQuantidadeGasolinaTanque() + " litros");
         } else{

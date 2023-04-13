@@ -14,5 +14,8 @@ public class App {
 
     public static void main(String[] args) {
         
+        Carro carroA = new Carro(20);
+        Carro carroB = new Carro(30);
+        
     }
 }
