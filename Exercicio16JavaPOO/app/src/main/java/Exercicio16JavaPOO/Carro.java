@@ -20,7 +20,7 @@ public class Carro {
      
     public void distanciaPercorrida(double distanciaPercorrida){
         double quantidadeGasolinaConsumido = distanciaPercorrida / this.quilometrosPorLitro;
-        System.out.println("Distancia percorrida: " + distanciaPercorrida);
+        System.out.println("Distancia percorrida: " + distanciaPercorrida + "km");
         System.out.println("Total de combustivel restante " + (getQuantidadeGasolinaTanque() - quantidadeGasolinaConsumido));
     }
 
