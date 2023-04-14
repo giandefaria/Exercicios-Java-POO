@@ -17,5 +17,7 @@ public class App {
         Carro carroA = new Carro(20);
         Carro carroB = new Carro(30);
         
+        carroA.distanciaPercorrida(200);
+        carroB.distanciaPercorrida(400);
     }
 }
