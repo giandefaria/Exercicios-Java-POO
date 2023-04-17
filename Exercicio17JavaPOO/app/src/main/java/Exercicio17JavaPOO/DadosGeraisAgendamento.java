@@ -11,5 +11,6 @@ package Exercicio17JavaPOO;
 public class DadosGeraisAgendamento {
     
     private String nome;
+    private String telefone;
     
 }
