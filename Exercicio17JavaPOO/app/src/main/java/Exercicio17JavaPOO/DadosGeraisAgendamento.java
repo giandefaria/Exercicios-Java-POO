@@ -13,4 +13,7 @@ public class DadosGeraisAgendamento {
     private String nome;
     private String telefone;
     private String descricao;
+    
+    public DadosGeraisAgendamento(){
+    }
 }
