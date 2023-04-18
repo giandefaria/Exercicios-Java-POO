@@ -16,4 +16,12 @@ public class DadosGeraisAgendamento {
     
     public DadosGeraisAgendamento(){
     }
+
+    public DadosGeraisAgendamento(String nome, String telefone, String descricao) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.descricao = descricao;
+    }
+    
+    
 }
