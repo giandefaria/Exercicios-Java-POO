@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Exercicio17JavaPOO;
+import java.util.Scanner;
 
 /**
  *
@@ -18,9 +19,12 @@ public class CriarAgendamento extends DadosGeraisAgendamento {
         
         char desejaRepetir = 's';
         
+        Scanner leitor = new Scanner(System.in);
+        
         while(desejaRepetir == 's' || desejaRepetir == 'S'){
-        
-        
+            
+            
+            
         }
         
     }
