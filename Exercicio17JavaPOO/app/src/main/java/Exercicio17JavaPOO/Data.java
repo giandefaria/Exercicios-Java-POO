@@ -19,6 +19,9 @@ public class Data implements Cloneable { //tenho que implementar a interface clo
     private int ano;
     private boolean verifica = true;
     
+    public Data(){
+    }
+    
     public Data (int dia, int mes, int ano) {
         this.dia = dia;
         this.mes = mes;

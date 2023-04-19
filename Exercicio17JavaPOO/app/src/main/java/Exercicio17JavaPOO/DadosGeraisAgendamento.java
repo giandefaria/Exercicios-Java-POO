@@ -8,16 +8,14 @@ package Exercicio17JavaPOO;
  *
  * @author User
  */
-public class DadosGeraisAgendamento {
+public class DadosGeraisAgendamento extends Data {
     
     private String nome;
     private String telefone;
     private String descricao;
-    private int dia;
-    private int mes;
-    private int ano;
+
     
-    public DadosGeraisAgendamento(){
+    public DadosGeraisAgendamento(int dia, int mes, int ano){
     }
 
     public String getNome() {

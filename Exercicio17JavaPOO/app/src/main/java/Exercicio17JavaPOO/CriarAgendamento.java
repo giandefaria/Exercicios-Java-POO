@@ -9,13 +9,13 @@ import java.util.Scanner;
  *
  * @author User
  */
-public class CriarAgendamento extends DadosGeraisAgendamento {
+public class CriarAgendamento {
     
     private int indice = 0;
     DadosGeraisAgendamento dadosAgendamento[] = new DadosGeraisAgendamento[99];
     
     public CriarAgendamento(){
-        super();
+       
     }
     
     public void novoAgendamento(){
@@ -27,7 +27,7 @@ public class CriarAgendamento extends DadosGeraisAgendamento {
         while(desejaRepetir == 's' || desejaRepetir == 'S'){
             
             
-            System.err.println("Deseja criar um novo agendamento?");  
+            System.out.println("Deseja criar um novo agendamento?");  
         }
         
     }
