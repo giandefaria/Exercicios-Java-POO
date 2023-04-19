@@ -16,6 +16,13 @@ public class CriarAgendamento extends DadosGeraisAgendamento {
     
     public void novoAgendamento(){
         
+        char desejaRepetir = 's';
+        
+        while(desejaRepetir == 's' || desejaRepetir == 'S'){
+        
+        
+        }
+        
     }
     
 }
