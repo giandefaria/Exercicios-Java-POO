@@ -8,6 +8,14 @@ package Exercicio17JavaPOO;
  *
  * @author User
  */
-public class CriarAgendamento {
+public class CriarAgendamento extends DadosGeraisAgendamento {
+    
+    public CriarAgendamento(){
+        super();
+    }
+    
+    public void novoAgendamento(){
+        
+    }
     
 }
