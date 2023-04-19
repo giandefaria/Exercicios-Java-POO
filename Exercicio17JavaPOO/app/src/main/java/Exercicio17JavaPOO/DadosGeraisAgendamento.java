@@ -21,6 +21,39 @@ public class DadosGeraisAgendamento extends Data {
         this.dataAgendamento = super.getDataFormatada();
     }
 
- 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getDataAgendamento() {
+        return dataAgendamento;
+    }
+
+    public void setDataAgendamento(int dia, int mes, int ano) {
+        Data data = new Data(dia, mes, ano);
+        this.dataAgendamento = data.getDataFormatada();
+    }
+    
+     
     
 }
