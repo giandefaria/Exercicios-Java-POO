@@ -37,6 +37,9 @@ public class CriarAgenda {
                 System.out.println("Informe o número de telefone");
                 String telefone = leitor.nextLine();
                 
+                System.out.println("Descreva o agendamento");
+                String descricao = leitor.nextLine();
+                
             }else{
                 System.out.println("Valor inválido");
             }
