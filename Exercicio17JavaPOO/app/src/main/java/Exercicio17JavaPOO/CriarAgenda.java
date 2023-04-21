@@ -9,12 +9,12 @@ import java.util.Scanner;
  *
  * @author User
  */
-public class CriarAgendamento {
+public class CriarAgenda {
     
     private int indice = 0;
     DadosGeraisAgendamento dadosAgendamento[] = new DadosGeraisAgendamento[99];
     
-    public CriarAgendamento(){
+    public CriarAgenda(){
        
     }
     
