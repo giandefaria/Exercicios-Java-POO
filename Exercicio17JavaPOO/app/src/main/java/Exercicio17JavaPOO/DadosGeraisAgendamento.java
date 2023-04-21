@@ -10,15 +10,17 @@ package Exercicio17JavaPOO;
  */
 public class DadosGeraisAgendamento extends Data {
     
+    private String tipo;
     private String nome;
     private String telefone;
     private String descricao;
     private String dataAgendamento;
 
     
-    public DadosGeraisAgendamento(String nome, String telefone, String descricao, int dia, int mes, int ano){
+    public DadosGeraisAgendamento(String tipo, String nome, String telefone, String descricao, int dia, int mes, int ano){
         super(dia, mes, ano);
         this.dataAgendamento = super.getDataFormatada();
+        this.tipo = tipo;
         this.nome = nome;
         this.telefone = telefone;
         this.descricao = descricao;
