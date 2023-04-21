@@ -26,6 +26,10 @@ public class DadosGeraisAgendamento extends Data {
         this.descricao = descricao;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+    
     public String getNome() {
         return nome;
     }
