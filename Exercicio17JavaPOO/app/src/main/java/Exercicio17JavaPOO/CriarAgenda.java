@@ -28,9 +28,11 @@ public class CriarAgenda {
             
             System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
             int tipo = leitor.nextInt();
+            leitor.nextLine();
             
             if(tipo == 1 || tipo == 2 || tipo == 3) {
-                
+                System.out.println("Informe o nome do participante");
+                String nome = leitor.nextLine();
             }else{
                 System.out.println("Valor inválido");
             }
