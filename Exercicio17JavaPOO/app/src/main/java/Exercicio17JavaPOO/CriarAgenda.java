@@ -33,6 +33,10 @@ public class CriarAgenda {
             if(tipo == 1 || tipo == 2 || tipo == 3) {
                 System.out.println("Informe o nome do participante");
                 String nome = leitor.nextLine();
+                
+                System.out.println("Informe o número de telefone");
+                String telefone = leitor.nextLine();
+                
             }else{
                 System.out.println("Valor inválido");
             }
