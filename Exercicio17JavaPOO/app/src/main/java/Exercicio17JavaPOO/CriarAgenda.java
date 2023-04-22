@@ -40,6 +40,9 @@ public class CriarAgenda {
                 System.out.println("Descreva o agendamento");
                 String descricao = leitor.nextLine();
                 
+                System.out.println("Digite o dia do agendamento");
+                int dia = leitor.nextInt();
+                
             }else{
                 System.out.println("Valor inválido");
             }
