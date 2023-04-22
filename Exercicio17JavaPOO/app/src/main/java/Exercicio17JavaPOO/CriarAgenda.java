@@ -46,6 +46,9 @@ public class CriarAgenda {
                 System.out.println("Digite o mes do agendamento");
                 int mes = leitor.nextInt();
                 
+                System.out.println("Digite o ano do agendamento");
+                int ano = leitor.nextInt();
+                
             }else{
                 System.out.println("Valor inválido");
             }
