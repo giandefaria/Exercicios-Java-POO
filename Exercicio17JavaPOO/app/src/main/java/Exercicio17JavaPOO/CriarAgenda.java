@@ -49,14 +49,12 @@ public class CriarAgenda {
                 System.out.println("Digite o ano do agendamento");
                 int ano = leitor.nextInt();
                 
-                if(tipo == 1){
-                    dadosAgendamento[indice] = new DadosGeraisAgendamento("Reuniao", nome, telefone, descricao, dia, mes, ano);
-                } else if(tipo == 2){
-                    dadosAgendamento[indice] = new DadosGeraisAgendamento("Pagamento", nome, telefone, descricao, dia, mes, ano);
-                } else {
-                    dadosAgendamento[indice] = new DadosGeraisAgendamento("Entrega de Projeto", nome, telefone, descricao, dia, mes, ano);
+                switch (tipo) {
+                    case 1 -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Reuniao", nome, telefone, descricao, dia, mes, ano);
+                    case 2 -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Pagamento", nome, telefone, descricao, dia, mes, ano);
+                    default -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Entrega de Projeto", nome, telefone, descricao, dia, mes, ano);
                 }
-                
+                //adicionar indice
             }else{
                 System.out.println("Valor inválido");
             }
