@@ -51,6 +51,8 @@ public class CriarAgenda {
                 
                 if(tipo == 1){
                     dadosAgendamento[indice] = new DadosGeraisAgendamento("Reuniao", nome, telefone, descricao, dia, mes, ano);
+                } else if(tipo == 2){
+                    dadosAgendamento[indice] = new DadosGeraisAgendamento("Pagamento", nome, telefone, descricao, dia, mes, ano);
                 }
                 
             }else{
