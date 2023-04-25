@@ -49,6 +49,10 @@ public class CriarAgenda {
                 System.out.println("Digite o ano do agendamento");
                 int ano = leitor.nextInt();
                 
+                if(tipo == 1){
+                    dadosAgendamento[indice] = new DadosGeraisAgendamento("Reuniao", nome, telefone, descricao, dia, mes, ano);
+                }
+                
             }else{
                 System.out.println("Valor inválido");
             }
