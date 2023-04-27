@@ -25,6 +25,10 @@ public class DadosGeraisAgendamento extends Data {
         this.telefone = telefone;
         this.descricao = descricao;
     }
+    
+    public void informacoesAgendamento(){
+    
+    }
 
     public String getTipo() {
         return tipo;
