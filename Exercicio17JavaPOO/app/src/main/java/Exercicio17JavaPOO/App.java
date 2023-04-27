@@ -14,5 +14,7 @@ public class App {
 
     public static void main(String[] args) {
        CriarAgenda joao = new CriarAgenda();
+       //fazer novo agendamento
+       joao.novoAgendamento();
     }
 }
