@@ -55,6 +55,7 @@ public class CriarAgenda {
                     case 2 -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Pagamento", nome, telefone, descricao, dia, mes, ano);
                     default -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Entrega de Projeto", nome, telefone, descricao, dia, mes, ano);
                 }
+                dadosAgendamento[indice].informacoesAgendamento();
                 indice++;
             }else{
                 System.out.println("Valor inválido");
@@ -62,7 +63,7 @@ public class CriarAgenda {
             
             System.out.println("Deseja criar um novo agendamento? S - sim, N - nao");
             desejaRepetir = leitor.nextLine().charAt(0);
-            dadosAgendamento[indice].informacoesAgendamento();
+            
         }
         
     }
