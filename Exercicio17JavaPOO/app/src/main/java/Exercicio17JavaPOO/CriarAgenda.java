@@ -62,6 +62,7 @@ public class CriarAgenda {
             
             System.out.println("Deseja criar um novo agendamento? S - sim, N - nao");
             desejaRepetir = leitor.nextLine().charAt(0);
+            dadosAgendamento[indice].informacoesAgendamento();
         }
         
     }
