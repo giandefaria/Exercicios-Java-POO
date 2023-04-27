@@ -60,7 +60,8 @@ public class CriarAgenda {
                 System.out.println("Valor inválido");
             }
             
-            System.out.println("Deseja criar um novo agendamento?");  
+            System.out.println("Deseja criar um novo agendamento? S - sim, N - nao");
+            desejaRepetir = leitor.nextLine().charAt(0);
         }
         
     }
