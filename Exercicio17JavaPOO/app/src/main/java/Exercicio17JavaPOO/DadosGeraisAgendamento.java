@@ -25,14 +25,6 @@ public class DadosGeraisAgendamento extends Data {
         this.telefone = telefone;
         this.descricao = descricao;
     }
-    
-    public void informacoesAgendamento(){
-        System.out.println("Data do agendamento: " + this.dataAgendamento);
-        System.out.println("Tipo de agendamento: " + this.tipo);
-        System.out.println("Nome do participante: " + this.nome);
-        System.out.println("Telefone do participante: " + this.telefone);
-        System.out.println("Descricao do agendamento: " + this.descricao);
-    }
 
     public String getTipo() {
         return tipo;
