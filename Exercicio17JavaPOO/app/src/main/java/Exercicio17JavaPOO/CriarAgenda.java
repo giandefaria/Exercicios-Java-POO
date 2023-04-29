@@ -56,6 +56,7 @@ public class CriarAgenda {
                     default -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Entrega de Projeto", nome, telefone, descricao, dia, mes, ano);
                 }
                 //dadosAgendamento[indice].informacoesAgendamento();
+                informacoesAgendamento(indice);
                 indice++;
             }else{
                 System.out.println("Valor inválido");
