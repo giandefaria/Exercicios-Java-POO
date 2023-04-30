@@ -55,8 +55,7 @@ public class CriarAgenda {
                     case 2 -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Pagamento", nome, telefone, descricao, dia, mes, ano);
                     default -> dadosAgendamento[indice] = new DadosGeraisAgendamento("Entrega de Projeto", nome, telefone, descricao, dia, mes, ano);
                 }
-                //dadosAgendamento[indice].informacoesAgendamento();
-                informacoesAgendamento(indice);
+
                 indice++;
             }else{
                 System.out.println("Valor inválido");
@@ -72,6 +71,7 @@ public class CriarAgenda {
     public void informacoesAgendamento(){
         int i = 1;       
         while(i <= this.indice){ 
+            System.out.println("Numero do agendamento: " + i);
             System.out.println("Data do agendamento: " + dadosAgendamento[indice].getDataAgendamento());
             System.out.println("Tipo de agendamento: " + dadosAgendamento[indice].getTipo());
             System.out.println("Nome do participante: " + dadosAgendamento[indice].getNome());
