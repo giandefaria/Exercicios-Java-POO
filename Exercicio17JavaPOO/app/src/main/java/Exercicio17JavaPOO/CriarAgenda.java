@@ -86,7 +86,7 @@ public class CriarAgenda {
     }
     
     public void alterarCompromisso(int indice){
-        
+        dadosAgendamento(indice);
     }
     
 }
