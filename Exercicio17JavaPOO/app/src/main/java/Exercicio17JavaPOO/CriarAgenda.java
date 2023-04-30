@@ -72,11 +72,11 @@ public class CriarAgenda {
         int i = 1;       
         while(i <= this.indice){ 
             System.out.println("Numero do agendamento: " + i);
-            System.out.println("Data do agendamento: " + dadosAgendamento[indice].getDataAgendamento());
-            System.out.println("Tipo de agendamento: " + dadosAgendamento[indice].getTipo());
-            System.out.println("Nome do participante: " + dadosAgendamento[indice].getNome());
-            System.out.println("Telefone do participante: " + dadosAgendamento[indice].getTelefone());
-            System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao() + "\b");
+            System.out.println("Data do agendamento: " + dadosAgendamento[i].getDataAgendamento());
+            System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
+            System.out.println("Nome do participante: " + dadosAgendamento[i].getNome());
+            System.out.println("Telefone do participante: " + dadosAgendamento[i].getTelefone());
+            System.out.println("Descricao do agendamento: " + dadosAgendamento[i].getDescricao() + "\b");
             i++;
         }
     }
