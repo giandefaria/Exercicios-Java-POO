@@ -69,12 +69,15 @@ public class CriarAgenda {
         
     }
     
-    public void informacoesAgendamento(int indice){
-        System.out.println("Data do agendamento: " + dadosAgendamento[indice].getDataAgendamento());
-        System.out.println("Tipo de agendamento: " + dadosAgendamento[indice].getTipo());
-        System.out.println("Nome do participante: " + dadosAgendamento[indice].getNome());
-        System.out.println("Telefone do participante: " + dadosAgendamento[indice].getTelefone());
-        System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao());
+    public void informacoesAgendamento(){
+        int i = 1;       
+        while(i <= this.indice){ 
+            System.out.println("Data do agendamento: " + dadosAgendamento[indice].getDataAgendamento());
+            System.out.println("Tipo de agendamento: " + dadosAgendamento[indice].getTipo());
+            System.out.println("Nome do participante: " + dadosAgendamento[indice].getNome());
+            System.out.println("Telefone do participante: " + dadosAgendamento[indice].getTelefone());
+            System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao());
+        }
     }
     
 }
