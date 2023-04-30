@@ -68,7 +68,7 @@ public class CriarAgenda {
         
     }
     
-    public void informacoesAgendamento(){
+    public void exibirTodosAgendamentos(){
         int i = 1;       
         while(i < this.indice){ 
             dadosAgendamento(i);
