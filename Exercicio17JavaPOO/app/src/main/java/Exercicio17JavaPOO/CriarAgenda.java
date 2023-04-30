@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class CriarAgenda {
     
-    private int indice = 0;
+    private int indice = 1;
     DadosGeraisAgendamento dadosAgendamento[] = new DadosGeraisAgendamento[99];
     
     public CriarAgenda(){
