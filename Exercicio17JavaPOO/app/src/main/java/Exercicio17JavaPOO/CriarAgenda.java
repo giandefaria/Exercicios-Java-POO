@@ -71,14 +71,18 @@ public class CriarAgenda {
     public void informacoesAgendamento(){
         int i = 1;       
         while(i < this.indice){ 
-            System.out.println("Numero do agendamento: " + i);
-            System.out.println("Data do agendamento: " + dadosAgendamento[i].getDataAgendamento());
-            System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
-            System.out.println("Nome do participante: " + dadosAgendamento[i].getNome());
-            System.out.println("Telefone do participante: " + dadosAgendamento[i].getTelefone());
-            System.out.println("Descricao do agendamento: " + dadosAgendamento[i].getDescricao() + "\b");
+            dadosAgendamento(i);
             i++;
         }
+    }
+
+    private void dadosAgendamento(int i) {
+        System.out.println("Numero do agendamento: " + i);
+        System.out.println("Data do agendamento: " + dadosAgendamento[i].getDataAgendamento());
+        System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
+        System.out.println("Nome do participante: " + dadosAgendamento[i].getNome());
+        System.out.println("Telefone do participante: " + dadosAgendamento[i].getTelefone());
+        System.out.println("Descricao do agendamento: " + dadosAgendamento[i].getDescricao() + "\b");
     }
     
     public void alterarCompromisso(int indice){
