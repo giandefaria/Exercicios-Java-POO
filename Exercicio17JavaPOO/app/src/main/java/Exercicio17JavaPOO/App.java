@@ -17,6 +17,6 @@ public class App {
        //fazer novo agendamento
        joao.novoAgendamento();
        //alterar dados do agendamento
-       joao.informacoesAgendamento(1);
+       joao.informacoesAgendamento();
     }
 }
