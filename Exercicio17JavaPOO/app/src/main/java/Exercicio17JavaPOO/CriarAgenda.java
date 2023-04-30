@@ -70,7 +70,7 @@ public class CriarAgenda {
     
     public void informacoesAgendamento(){
         int i = 1;       
-        while(i <= this.indice){ 
+        while(i < this.indice){ 
             System.out.println("Numero do agendamento: " + i);
             System.out.println("Data do agendamento: " + dadosAgendamento[i].getDataAgendamento());
             System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
