@@ -76,7 +76,7 @@ public class CriarAgenda {
             System.out.println("Tipo de agendamento: " + dadosAgendamento[indice].getTipo());
             System.out.println("Nome do participante: " + dadosAgendamento[indice].getNome());
             System.out.println("Telefone do participante: " + dadosAgendamento[indice].getTelefone());
-            System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao());
+            System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao() + "\b");
         }
     }
     
