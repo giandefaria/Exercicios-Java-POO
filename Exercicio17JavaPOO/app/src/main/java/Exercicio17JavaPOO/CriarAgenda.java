@@ -70,12 +70,12 @@ public class CriarAgenda {
     public void exibirTodosAgendamentos(){
         int i = 1;       
         while(i < this.indice){ 
-            dadosAgendamento(i);
+            informacoesDoAgendamento(i);
             i++;
         }
     }
 
-    private void dadosAgendamento(int i) {
+    private void informacoesDoAgendamento(int i) {
         System.out.println("Numero do agendamento: " + i);
         System.out.println("Data do agendamento: " + dadosAgendamento[i].getDataAgendamento());
         System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
@@ -85,7 +85,7 @@ public class CriarAgenda {
     }
     
     public void alterarCompromisso(int indice){
-        dadosAgendamento(indice);
+        informacoesDoAgendamento(indice);
         //perguntar o que deseja alterar e adicionar as opções
         System.out.println("Qual agendamento deseja alterar? ");
         int agendamentoSelecionado = leitor.nextInt();
