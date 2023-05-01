@@ -13,7 +13,7 @@ public class CriarAgenda {
     
     private int indice = 1;
     DadosGeraisAgendamento dadosAgendamento[] = new DadosGeraisAgendamento[99];
-    
+    Scanner leitor = new Scanner(System.in);
     public CriarAgenda(){
        
     }
@@ -22,7 +22,6 @@ public class CriarAgenda {
         
         char desejaRepetir = 's';
         
-        Scanner leitor = new Scanner(System.in);
         
         while(desejaRepetir == 's' || desejaRepetir == 'S'){
             
@@ -88,6 +87,8 @@ public class CriarAgenda {
     public void alterarCompromisso(int indice){
         dadosAgendamento(indice);
         //perguntar o que deseja alterar e adicionar as opções
+        System.out.println("Qual agendamento deseja alterar? ");
+        int agendamentoSelecionado = leitor.nextInt();
     }
     
 }
