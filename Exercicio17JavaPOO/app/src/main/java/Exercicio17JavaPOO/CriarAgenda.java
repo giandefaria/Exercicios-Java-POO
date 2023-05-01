@@ -82,11 +82,12 @@ public class CriarAgenda {
         System.out.println("Tipo de agendamento: " + dadosAgendamento[i].getTipo());
         System.out.println("Nome do participante: " + dadosAgendamento[i].getNome());
         System.out.println("Telefone do participante: " + dadosAgendamento[i].getTelefone());
-        System.out.println("Descricao do agendamento: " + dadosAgendamento[i].getDescricao() + "\b");
+        System.out.println("Descricao do agendamento: " + dadosAgendamento[i].getDescricao() + "\n");
     }
     
     public void alterarCompromisso(int indice){
         dadosAgendamento(indice);
+        //perguntar o que deseja alterar e adicionar as opções
     }
     
 }
