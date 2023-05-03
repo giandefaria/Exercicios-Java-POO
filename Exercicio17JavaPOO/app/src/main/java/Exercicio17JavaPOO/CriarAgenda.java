@@ -92,6 +92,7 @@ public class CriarAgenda {
         
         if(agendamentoSelecionado < this.indice){
             System.out.println("Agendamento " + agendamentoSelecionado + "selecionado");
+            informacoesDoAgendamento(agendamentoSelecionado);
         }else {
             System.out.println("Agendamento não existente. Digite outro número");
         }
