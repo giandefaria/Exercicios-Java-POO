@@ -109,6 +109,7 @@ public class CriarAgenda {
                     int mes = leitor.nextInt();
                     System.out.println("Digite o ano");
                     int ano = leitor.nextInt();
+                    dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
                 }
                     
                     
