@@ -116,7 +116,7 @@ public class CriarAgenda {
                 default -> {}
                 
             }
-            
+            informacoesDoAgendamento(agendamentoSelecionado);
         }else {
             System.out.println("Agendamento não existente. Digite outro número");
         }
