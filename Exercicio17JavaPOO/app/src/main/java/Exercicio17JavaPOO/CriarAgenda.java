@@ -104,8 +104,11 @@ public class CriarAgenda {
             switch (escolha) {
                 case 1 -> {
                     System.out.println("Digite o dia");
-                    int dia = nextInt();
-                    
+                    int dia = leitor.nextInt();
+                    System.out.println("Digite o mes");
+                    int mes = leitor.nextInt();
+                    System.out.println("Digite o ano");
+                    int ano = leitor.nextInt();
                 }
                     
                     
