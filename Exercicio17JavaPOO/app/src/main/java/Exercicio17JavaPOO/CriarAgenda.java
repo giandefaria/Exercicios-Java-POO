@@ -101,6 +101,13 @@ public class CriarAgenda {
                                 Digite 4 para alterar o telefone do participante 
                                 Digite 5 para alterar a descricao do agendamento """);
             int escolha = leitor.nextInt();
+            switch (escolha) {
+                case 1 -> {}
+                    
+                    
+                default -> {}
+                
+            }
             
         }else {
             System.out.println("Agendamento não existente. Digite outro número");
