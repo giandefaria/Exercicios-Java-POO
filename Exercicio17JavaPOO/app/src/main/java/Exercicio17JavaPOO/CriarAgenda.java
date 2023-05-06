@@ -111,6 +111,10 @@ public class CriarAgenda {
                     int ano = leitor.nextInt();
                     dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
                 }
+                case 2 -> { 
+                    System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
+                    
+                }
                     
                     
                 default -> {}
