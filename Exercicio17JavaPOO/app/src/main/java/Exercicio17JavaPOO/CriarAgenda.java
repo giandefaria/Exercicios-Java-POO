@@ -114,6 +114,12 @@ public class CriarAgenda {
                 case 2 -> { 
                     System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
                     int novoTipoAgendamento = leitor.nextInt();
+                    switch(novoTipoAgendamento){
+                        case 1 -> dadosAgendamento[agendamentoSelecionado].set ("Reuniao"
+                        case 2 -> dadosAgendamento[agendamentoSelecionado] ("Pagamento"
+                        default -> dadosAgendamento[agendamentoSelecionado] ("Entrega de Projeto");
+                
+                    }
                 }
                     
                     
