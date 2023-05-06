@@ -110,16 +110,22 @@ public class CriarAgenda {
                     System.out.println("Digite o ano");
                     int ano = leitor.nextInt();
                     dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
+                    leitor.nextLine();
                 }
                 case 2 -> { 
                     System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
                     int novoTipoAgendamento = leitor.nextInt();
+                    leitor.nextLine();
                     switch(novoTipoAgendamento){
                         case 1 -> dadosAgendamento[agendamentoSelecionado].setTipo("Reuniao");
                         case 2 -> dadosAgendamento[agendamentoSelecionado].setTipo("Pagamento");
-                        default -> dadosAgendamento[agendamentoSelecionado].setTipo("Entrega de Projeto");
-                
+                        default -> dadosAgendamento[agendamentoSelecionado].setTipo("Entrega de Projeto");               
                     }
+                }
+                case 3 -> {
+                    System.out.println("Digite o nome do participante:");
+                    String novoParticipante = leitor.nextLine();
+                    dadosAgendamento[agendamentoSelecionado].setNome(novoParticipante);
                 }
                     
                     
