@@ -130,7 +130,7 @@ public class CriarAgenda {
                 case 4 -> {
                     System.out.println("Digite o número de telefone do participante");
                     String novoTelefone = leitor.nextLine();
-                    
+                    dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
                 }
                     
                     
