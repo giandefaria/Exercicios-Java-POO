@@ -127,6 +127,9 @@ public class CriarAgenda {
                     String novoParticipante = leitor.nextLine();
                     dadosAgendamento[agendamentoSelecionado].setNome(novoParticipante);
                 }
+                case 4 -> {
+                    System.out.println("Digite o número de telefone do participante");
+                }
                     
                     
                 default -> {}
