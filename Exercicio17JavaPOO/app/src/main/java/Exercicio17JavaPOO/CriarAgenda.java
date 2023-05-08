@@ -134,6 +134,7 @@ public class CriarAgenda {
                 }
                 case 5 ->{
                     System.out.println("Digite a descrição do agendamento");
+                    String novaDescricao = leitor.nextLine();
                 }
                     
                 default -> {}
