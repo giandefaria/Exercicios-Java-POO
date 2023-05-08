@@ -16,7 +16,9 @@ public class App {
        CriarAgenda joao = new CriarAgenda();
        //fazer novo agendamento
        joao.novoAgendamento();
-       //alterar dados do agendamento
+       //exibir dados do agendamento
        joao.exibirTodosAgendamentos();
+       //alterar dados do agendamento
+       joao.
     }
 }

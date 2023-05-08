@@ -84,8 +84,8 @@ public class CriarAgenda {
         System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao() + "\n");
     }
     
-    public void alterarCompromisso(int indice){
-        informacoesDoAgendamento(indice);
+    public void alterarCompromisso(){
+        exibirTodosAgendamentos();
         //perguntar o que deseja alterar e adicionar as opções
         System.out.println("Qual agendamento deseja alterar? ");
         int agendamentoSelecionado = leitor.nextInt();
