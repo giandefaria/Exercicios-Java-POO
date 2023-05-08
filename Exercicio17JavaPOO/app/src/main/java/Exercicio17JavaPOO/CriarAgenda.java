@@ -133,7 +133,7 @@ public class CriarAgenda {
                     dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
                 }
                 case 5 ->{
-                
+                    System.out.println("Digite a descrição do agendamento");
                 }
                     
                 default -> {}
