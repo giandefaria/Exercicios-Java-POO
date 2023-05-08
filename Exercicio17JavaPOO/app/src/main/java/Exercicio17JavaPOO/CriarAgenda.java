@@ -132,7 +132,9 @@ public class CriarAgenda {
                     String novoTelefone = leitor.nextLine();
                     dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
                 }
-                    
+                case 5 ->{
+                
+                }
                     
                 default -> {}
                 
