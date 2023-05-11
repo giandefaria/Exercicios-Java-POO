@@ -12,7 +12,7 @@ package Exercicio17JavaPOO;
 public class App {
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
        CriarAgenda joao = new CriarAgenda();
        //fazer novo agendamento
        joao.novoAgendamento();
