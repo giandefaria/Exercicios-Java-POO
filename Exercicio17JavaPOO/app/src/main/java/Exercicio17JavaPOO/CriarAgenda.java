@@ -101,6 +101,7 @@ public class CriarAgenda {
                                 Digite 4 para alterar o telefone do participante 
                                 Digite 5 para alterar a descricao do agendamento """);
             int escolha = leitor.nextInt();
+            leitor.nextLine();
             switch (escolha) {
                 case 1 -> {
                     System.out.println("Digite o dia");
