@@ -84,7 +84,7 @@ public class CriarAgenda {
         System.out.println("Descricao do agendamento: " + dadosAgendamento[indice].getDescricao() + "\n");
     }
     
-    public void alterarCompromisso(){
+    public void alterarCompromisso() throws Exception{
         exibirTodosAgendamentos();
         //perguntar o que deseja alterar e adicionar as opções
         System.out.println("Qual agendamento deseja alterar? ");
@@ -138,7 +138,7 @@ public class CriarAgenda {
                     dadosAgendamento[agendamentoSelecionado].setDescricao(novaDescricao);
                 }
                     
-                default -> {}
+                default -> { throw new Exception("Valor inválido") ;}
                 
             }
             informacoesDoAgendamento(agendamentoSelecionado);
