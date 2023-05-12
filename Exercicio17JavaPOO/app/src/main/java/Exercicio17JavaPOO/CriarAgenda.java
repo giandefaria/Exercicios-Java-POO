@@ -93,17 +93,19 @@ public class CriarAgenda {
         if(agendamentoSelecionado < this.indice){
             System.out.println("Agendamento " + agendamentoSelecionado + "selecionado");
             informacoesDoAgendamento(agendamentoSelecionado);
-            System.out.println("""                               
-                                O que deseja alterar? 
-                                Digite 1 para alterar a data 
-                                Digite 2 para alterar o Tipo de agendamento 
-                                Digite 3 para alterar o nome do participante 
-                                Digite 4 para alterar o telefone do participante 
-                                Digite 5 para alterar a descricao do agendamento """);
-            int escolha = leitor.nextInt();
-            leitor.nextLine();
+            
             int repete = 1;
             while(repete == 1){
+                System.out.println("""                               
+                                    O que deseja alterar? 
+                                    Digite 1 para alterar a data 
+                                    Digite 2 para alterar o Tipo de agendamento 
+                                    Digite 3 para alterar o nome do participante 
+                                    Digite 4 para alterar o telefone do participante 
+                                    Digite 5 para alterar a descricao do agendamento """);
+                int escolha = leitor.nextInt();
+                leitor.nextLine();
+
                 switch (escolha) {
                     case 1 -> {
                         System.out.println("Digite o dia");
