@@ -103,45 +103,47 @@ public class CriarAgenda {
             int escolha = leitor.nextInt();
             leitor.nextLine();
             int repete = 1;
-            switch (escolha) {
-                case 1 -> {
-                    System.out.println("Digite o dia");
-                    int dia = leitor.nextInt();
-                    System.out.println("Digite o mes");
-                    int mes = leitor.nextInt();
-                    System.out.println("Digite o ano");
-                    int ano = leitor.nextInt();
-                    dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
-                    leitor.nextLine();
-                }
-                case 2 -> { 
-                    System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
-                    int novoTipoAgendamento = leitor.nextInt();
-                    leitor.nextLine();
-                    switch(novoTipoAgendamento){
-                        case 1 -> dadosAgendamento[agendamentoSelecionado].setTipo("Reuniao");
-                        case 2 -> dadosAgendamento[agendamentoSelecionado].setTipo("Pagamento");
-                        default -> dadosAgendamento[agendamentoSelecionado].setTipo("Entrega de Projeto");               
+            while(repete == 1){
+                switch (escolha) {
+                    case 1 -> {
+                        System.out.println("Digite o dia");
+                        int dia = leitor.nextInt();
+                        System.out.println("Digite o mes");
+                        int mes = leitor.nextInt();
+                        System.out.println("Digite o ano");
+                        int ano = leitor.nextInt();
+                        dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
+                        leitor.nextLine();
                     }
-                }
-                case 3 -> {
-                    System.out.println("Digite o nome do participante:");
-                    String novoParticipante = leitor.nextLine();
-                    dadosAgendamento[agendamentoSelecionado].setNome(novoParticipante);
-                }
-                case 4 -> {
-                    System.out.println("Digite o número de telefone do participante");
-                    String novoTelefone = leitor.nextLine();
-                    dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
-                }
-                case 5 ->{
-                    System.out.println("Digite a descrição do agendamento");
-                    String novaDescricao = leitor.nextLine();
-                    dadosAgendamento[agendamentoSelecionado].setDescricao(novaDescricao);
-                }
-                    
-                default -> { System.out.println("Valor inválido");}
-                
+                    case 2 -> { 
+                        System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
+                        int novoTipoAgendamento = leitor.nextInt();
+                        leitor.nextLine();
+                        switch(novoTipoAgendamento){
+                            case 1 -> dadosAgendamento[agendamentoSelecionado].setTipo("Reuniao");
+                            case 2 -> dadosAgendamento[agendamentoSelecionado].setTipo("Pagamento");
+                            default -> dadosAgendamento[agendamentoSelecionado].setTipo("Entrega de Projeto");               
+                        }
+                    }
+                    case 3 -> {
+                        System.out.println("Digite o nome do participante:");
+                        String novoParticipante = leitor.nextLine();
+                        dadosAgendamento[agendamentoSelecionado].setNome(novoParticipante);
+                    }
+                    case 4 -> {
+                        System.out.println("Digite o número de telefone do participante");
+                        String novoTelefone = leitor.nextLine();
+                        dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
+                    }
+                    case 5 ->{
+                        System.out.println("Digite a descrição do agendamento");
+                        String novaDescricao = leitor.nextLine();
+                        dadosAgendamento[agendamentoSelecionado].setDescricao(novaDescricao);
+                    }
+
+                    default -> { System.out.println("Valor inválido");}
+
+                }   
             }
             informacoesDoAgendamento(agendamentoSelecionado);
         }else {
