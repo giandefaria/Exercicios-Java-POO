@@ -114,6 +114,7 @@ public class CriarAgenda {
                         int ano = leitor.nextInt();
                         dadosAgendamento[agendamentoSelecionado].setDataAgendamento(dia, mes, ano);
                         leitor.nextLine();
+                        repete = 0;
                     }
                     case 2 -> { 
                         System.out.println("Informe o tipo de agendamento: 1 - reuniao, 2 - pagamento, 3 - entrega de projeto");
@@ -124,21 +125,25 @@ public class CriarAgenda {
                             case 2 -> dadosAgendamento[agendamentoSelecionado].setTipo("Pagamento");
                             default -> dadosAgendamento[agendamentoSelecionado].setTipo("Entrega de Projeto");               
                         }
+                        repete = 0;
                     }
                     case 3 -> {
                         System.out.println("Digite o nome do participante:");
                         String novoParticipante = leitor.nextLine();
                         dadosAgendamento[agendamentoSelecionado].setNome(novoParticipante);
+                        repete = 0;
                     }
                     case 4 -> {
                         System.out.println("Digite o número de telefone do participante");
                         String novoTelefone = leitor.nextLine();
-                        dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);                   
+                        dadosAgendamento[agendamentoSelecionado].setTelefone(novoTelefone);
+                        repete = 0;
                     }
                     case 5 ->{
                         System.out.println("Digite a descrição do agendamento");
                         String novaDescricao = leitor.nextLine();
                         dadosAgendamento[agendamentoSelecionado].setDescricao(novaDescricao);
+                        repete = 0;
                     }
 
                     default -> { System.out.println("Valor inválido");}
